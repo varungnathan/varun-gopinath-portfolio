@@ -17,7 +17,6 @@ nav {
 
 /* Extra Modification. Later checking needed */
 .nav__logo{
-    font-size: var(--h1-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);    
 }

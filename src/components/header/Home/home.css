@@ -1,3 +1,7 @@
+.home__container {
+    row-gap: 7rem;
+}
+
 .home__content {
     grid-template-columns: 116px repeat(2, 1fr);
     padding-top: 5.5rem;
@@ -70,14 +74,47 @@
 
 @keyframes profile__animate {
     0% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        border-radius: 50% 50% 40% 60% / 60% 40% 50% 50%;
+    }
+
+    25% {
+        border-radius: 40% 60% 60% 40% / 50% 50% 40% 60%;
     }
 
     50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        border-radius: 70% 30% 50% 50% / 40% 70% 30% 60%;
+    }
+
+    75% {
+        border-radius: 30% 70% 60% 40% / 60% 30% 70% 40%;
     }
     
     100% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        border-radius: 50% 50% 40% 60% / 60% 40% 50% 50%;
     }
+}
+
+.home__scroll {
+    margin-left: 9.25rem;
+}
+
+wheel {
+    animation: scroll 2s ease-in-out infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(3.75rem);
+    }
+}
+
+.home__scroll-name {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+    margin-left: 2px;
 }
