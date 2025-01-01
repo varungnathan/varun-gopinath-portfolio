@@ -32,7 +32,28 @@ const Services = () => {
                     <ul className="services__moda-services grid">
                         <li className="services__modal-services">
                             <i className="uil uil-check-circle services__modal-icon"></i>
-                            <p>Web Design</p>
+                            <p className="services__modal-info">I Develop the User Interface</p>
+                        </li>
+
+                        <li className="services__modal-services">
+                            <i className="uil uil-check-circle services__modal-icon"></i>
+                            <p className="services__modal-info">Webpage Development</p>
+                        </li>
+
+                        <li className="services__modal-services">
+                            <i className="uil uil-check-circle services__modal-icon"></i>
+                            <p className="services__modal-info">I Create UX Element interactions</p>
+                        </li>
+
+                        <li className="services__modal-services">
+                            <i className="uil uil-check-circle services__modal-icon"></i>
+                            <p className="services__modal-info">I Position your company brand
+                            </p>
+                        </li>
+
+                        <li className="services__modal-services">
+                            <i className="uil uil-check-circle services__modal-icon"></i>
+                            <p className="services__modal-info">Webpage Development</p>
                         </li>
                     </ul>
                 </div>
