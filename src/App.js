@@ -5,6 +5,7 @@ import Home from './components/header/Home/Home';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import Services from './components/services/Services';
+import Qualification from './components/qualification/Qualification';
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
     <Home />
     <About />
     <Skills />
-    <Services />
+    {/* <Services /> */}
+    <Qualification />
   </main>
     </>
   )
