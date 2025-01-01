@@ -23,7 +23,7 @@ const Social = () => {
         rel="noreferrer"
         aria-label="LinkedIn"
       >
-        <i className="uil uil-dribbble"></i>
+        <i class="uil uil-linkedin"></i>
       </a>
 
       <a
