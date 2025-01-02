@@ -34,8 +34,9 @@
     justify-content: center;
 }
 
-.qualification__content {
-}
+/* .qualification__content {
+    display: none;
+} */
 
 .qualification__content-active {
     display: block;
