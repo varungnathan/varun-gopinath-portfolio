@@ -1,3 +1,5 @@
+// src\components\header\Home\Home.jsx
+
 import React from 'react';
 import './home.css';
 import Social from './Social';

@@ -1,3 +1,5 @@
+// src\components\header\Home\Data.jsx
+
 import React from 'react'
 
 const Data = () => {

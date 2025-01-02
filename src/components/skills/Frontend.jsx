@@ -1,3 +1,5 @@
+// src\components\skills\Frontend.jsx
+
 import React from 'react'
 
 const Frontend = () => {

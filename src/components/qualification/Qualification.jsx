@@ -1,3 +1,5 @@
+// src\components\qualification\Qualification.jsx
+
 import React from 'react'
 import './qualification.css'
 

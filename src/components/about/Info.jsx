@@ -1,3 +1,5 @@
+// src\components\about\Info.jsx
+
 import React from 'react'
 
 const Info = () => {

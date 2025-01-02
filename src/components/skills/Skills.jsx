@@ -1,3 +1,5 @@
+// src\components\skills\Skills.jsx
+
 import React from 'react'
 import './skills.css'
 import Backend from './Backend'
