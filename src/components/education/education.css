@@ -1,0 +1,99 @@
+/* src\components\education\education.css */
+
+.education {
+    margin-top: var(--mb-3);
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .education__title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--mb-2);
+  }
+  
+  .education__icon {
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: var(--title-color);
+  }
+  
+  .education__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: var(--mb-2);
+    padding: 0 2rem;
+  }
+  
+  .education__item {
+    padding: 1.5rem;
+    background-color: var(--container-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .education__degree {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+  }
+  
+  .education__institution {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    margin-bottom: var(--mb-0-5);
+  }
+  
+  .education__details {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    margin-bottom: var(--mb-0-5);
+  }
+  
+  .education__date,
+  .education__gpa {
+    font-size: var(--normal-font-size);
+    color: var(--text-color-light);
+  }
+  
+  .education__divider {
+    width: 1px;
+    background-color: var(--text-color);
+    height: 100%;
+    max-height: 300px;
+    align-self: center;
+    margin: 0 3rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .education__title {
+      font-size: var(--h3-font-size);
+    }
+  
+    .education__item {
+      padding: 1rem;
+      width: 100%;
+    }
+  
+    .education__degree {
+      font-size: var(--h3-font-size);
+    }
+  
+    .education__date,
+    .education__gpa {
+      font-size: var(--smaller-font-size);
+    }
+  }
+  
