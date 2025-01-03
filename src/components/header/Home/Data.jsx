@@ -6,8 +6,15 @@ const Data = () => {
   return (
     <div className="home__data">
         <h1 className="home__title">Varun Gopinath</h1>
-        <h3 className="home__subtitle">Web Developer</h3>
-        <p className="home__description">I'm a web developer based in Toronto, and I'm very passionate and dedicated to my works</p>
+        <h3 className="home__subtitle">Full Stack Web/ Mobile Developer</h3>
+        <p className="home__description">
+  I am a recent graduate in Web Development from Conestoga College, with a strong foundation in both frontend and backend technologies.&nbsp; 
+  I am proficient in HTML, CSS, and JavaScript for creating responsive and dynamic web applications, along with expertise in React for building interactive UIs.&nbsp; 
+  On the backend, I have hands-on experience with PHP, Node.js, Python, and SQL, enabling me to build scalable and efficient web applications.&nbsp;<br />
+  &nbsp;<br />
+  In addition to web development, I am passionate about mobile development using Kotlin and have worked on cross-platform projects using React Native and Expo.&nbsp;
+  With a focus on delivering seamless user experiences, I am constantly exploring new technologies to stay ahead of industry trends and build robust applications across platforms.
+</p>
         <a href="#contact" className="button button--flex">
             Say Hello
             <svg

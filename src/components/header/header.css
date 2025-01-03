@@ -20,7 +20,8 @@ nav {
 /* Extra Modification. Later checking needed */
 .nav__logo{
     color: var(--title-color);
-    font-weight: var(--font-medium);    
+    font-weight: var(--font-medium);  
+    font-size: 1.1rem;
 }
 
 .nav__logo,
@@ -42,6 +43,7 @@ nav {
     color: var(--title-color);
     font-weight: var(--font-medium);
     transition: .3s;
+    font-size: 1.1rem;
 }
 
 .nav__icon,
