@@ -1,73 +1,44 @@
 // src\components\skills\Frontend.jsx
 
-import React from 'react'
+import React, { useEffect } from 'react';
 
 const Frontend = () => {
-  return (
-    <div className="skills content">
-        <h3 className="skills__title">Frontend Developer</h3>
+    const skills = [
+        { name: 'HTML', level: 90 },
+        { name: 'CSS', level: 90 },
+        { name: 'JavaScript', level: 80 },
+        { name: 'Bootstrap', level: 70 },
+        { name: 'Git', level: 75 },
+        { name: 'React', level: 75 },
+    ];
 
-        <div className="skills__box">
-            <div className="skills__group">
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
+    useEffect(() => {
+        skills.forEach((skill) => {
+            const progressBar = document.getElementById(`frontend-${skill.name}`);
+            if (progressBar) {
+                progressBar.style.width = `${skill.level}%`;
+            }
+        });
+    }, []);
 
-                <div>
-                    <h3 className="skills__name">HTML</h3>
-                    <span className="skills__level">Basic</span>
-                </div>
-                </div>
-
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className="skills__name">CSS</h3>
-                    <span className="skills__level">Advanced</span>
-                </div>
-                </div>
-
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className="skills__name">JavaScript</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
-                </div>
-            </div>
-
-            <div className="skills__group">
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className="skills__name">Bootstrap</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
-                </div>
-
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className="skills__name">Git</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
-                </div>
-
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className="skills__name">React</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
+    return (
+        <div className="skills content">
+            <h3 className="skills__title">Frontend Developer</h3>
+            <div className="skills__box">
+                <div className="skills__group">
+                    {skills.map((skill) => (
+                        <div className="skill__data" key={skill.name}>
+                            <h3 className="skill__name">{skill.name}</h3>
+                            <div className="skill__bar">
+                                <div className="skill__progress" id={`frontend-${skill.name}`}></div>
+                            </div>
+                            <span className="skills__level">{skill.level}%</span>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
-    </div>
-  )
-}
+    );
+};
 
-export default Frontend
+export default Frontend;

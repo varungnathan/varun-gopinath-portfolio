@@ -1,73 +1,44 @@
 // src\components\skills\Backend.jsx
 
-import React from 'react'
+import React, { useEffect } from 'react';
 
 const Backend = () => {
-  return (
-    <div className="skills content">
-        <h3 className="skills__title">Backend Developer</h3>
+    const skills = [
+        { name: 'PHP', level: 75 },
+        { name: 'Node Js', level: 80 },
+        { name: 'Python', level: 80 },
+        { name: 'MySQL', level: 90 },
+        { name: 'Firebase', level: 90 },
+        { name: 'SQL', level: 90 },
+    ];
 
-        <div className="skills__box">
-            <div className="skills__group">
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
+    useEffect(() => {
+        skills.forEach((skill) => {
+            const progressBar = document.getElementById(`backend-${skill.name.replace(/\s+/g, '-')}`); // Handle spaces
+            if (progressBar) {
+                progressBar.style.width = `${skill.level}%`;
+            }
+        });
+    }, []);
 
-                <div>
-                    <h3 className="skills__name">PHP</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
-                </div>
-
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className="skills__name">Node Js</h3>
-                    <span className="skills__level">Basic</span>
-                </div>
-                </div>
-
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className="skills__name">Python</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
-                </div>
-            </div>
-
-            <div className="skills__group">
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className="skills__name">MySQL</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
-                </div>
-
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className="skills__name">Firebase</h3>
-                    <span className="skills__level">Intermediate</span>
-                </div>
-                </div>
-
-                <div className="skills__data">
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className="skills__name">SQL</h3>
-                    <span className="skills__level">Advanced</span>
-                </div>
+    return (
+        <div className="skills content">
+            <h3 className="skills__title">Backend Developer</h3>
+            <div className="skills__box">
+                <div className="skills__group">
+                    {skills.map((skill) => (
+                        <div className="skill__data" key={skill.name}>
+                            <h3 className="skill__name">{skill.name}</h3>
+                            <div className="skill__bar">
+                                <div className="skill__progress" id={`backend-${skill.name.replace(/\s+/g, '-')}`}></div> {/* Handle spaces */}
+                            </div>
+                            <span className="skills__level">{skill.level}%</span>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
-    </div>
-  )
-}
+    );
+};
 
-export default Backend
+export default Backend;

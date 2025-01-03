@@ -41,7 +41,8 @@
 
 .skills__data {
     display: flex;
-    column-gap: 0.8rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .skills .bx-badge-check {
@@ -53,6 +54,7 @@
     font-size: 1.1rem;
     font-weight: var(--font-medium);
     line-height: 20px;
+    margin-bottom: 0.2rem;
 }
 
 .skills__level {
@@ -65,6 +67,22 @@ h3.skills__title {
     margin-bottom: 1.8rem;
 }
 
+.skill__bar {
+    background-color: #e9ecef;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.skill__progress {
+    background-color: var(--title-color);
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -72,11 +90,10 @@ h3.skills__title {
         grid-template-columns: max-content;
         row-gap: 2rem;
     }
-  }
-  
-  /* For medium devices */
+}
 
-  @media screen and (max-width: 576px) {
+/* For medium devices */
+@media screen and (max-width: 576px) {
     .skills__container {
         grid-template-columns: 1fr;
     }
@@ -84,16 +101,15 @@ h3.skills__title {
     .skills__content {
         padding: 1.5rem;
     }
-  }
-  
-  /* For small devices */
-  @media screen and (max-width: 350px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
     .skills__box {
         column-gap: 1.25rem;
     }
 
     .skills__name {
-         font-size: var(--small-font-size); 
+        font-size: var(--small-font-size);
     }
-  }
-  
+}
