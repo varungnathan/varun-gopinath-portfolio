@@ -19,7 +19,7 @@ const Frontend = () => {
         progressBar.style.width = `${skill.level}%`;
       }
     });
-  }, []);
+  }, [skills]); // Added 'skills' as a dependency
 
   return (
     <div className="skills content">

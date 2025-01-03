@@ -19,7 +19,7 @@ const Backend = () => {
         progressBar.style.width = `${skill.level}%`;
       }
     });
-  }, []);
+  }, [skills]);
 
   return (
     <div className="skills content">
