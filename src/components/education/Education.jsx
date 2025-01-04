@@ -10,7 +10,6 @@ const Education = () => {
       <span className="section__subtitle">My Academic Journey</span>
 
       <div className="education__timeline">
-        {/* Post Graduate Degree (Right side of the vertical line) */}
         <div className="education__item education__item-postgrad">
           <div className="education__circle right"></div>
           <div className="education__details">
@@ -21,10 +20,8 @@ const Education = () => {
           </div>
         </div>
 
-        {/* Vertical Bar */}
         <div className="education__bar"></div>
 
-        {/* Undergraduate Degree (Left side of the vertical line) */}
         <div className="education__item education__item-undergrad">
           <div className="education__circle left"></div>
           <div className="education__details">

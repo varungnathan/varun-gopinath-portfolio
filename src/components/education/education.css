@@ -19,7 +19,7 @@
 .education__timeline {
   position: relative;
   margin: 0 auto;
-  padding: 0 50px; /* Adjust padding for better centering */
+  padding: 0 50px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -32,7 +32,7 @@
   bottom: 0;
   left: 50%;
   width: 2px;
-  background-color: #ccc; /* Light grey line */
+  background-color: #ccc;
 }
 
 .education__item {
@@ -42,45 +42,45 @@
   align-items: flex-start;
   gap: 0.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%; /* Take up full width of the container */
-  max-width: 400px; /* Limit width for better visual alignment */
+  width: 100%;
+  max-width: 400px;
 }
 
 .education__item:hover .education__details {
   transform: translateX(5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .education__circle {
   width: 12px;
   height: 12px;
-  background-color: var(--title-color); /* Default circle color */
+  background-color: var(--title-color);
   border-radius: 50%;
   position: absolute;
   top: 0;
 }
 
 .education__circle.right {
-  right: -7px; /* Position it on the right side of the line */
+  right: -7px;
 }
 
 .education__circle.left {
-  left: -7px; /* Position it on the left side of the line */
+  left: -7px;
 }
 
 .education__item-postgrad .education__circle {
-  background-color: #00796b; /* Dark teal for Postgraduate */
+  background-color: #666;
 }
 
 .education__item-undergrad .education__circle {
-  background-color: #0288d1; /* Blue for Undergraduate */
+  background-color: #666;
 }
 
 .education__details {
-  margin-left: 20px; /* Move details closer to the line */
-  font-size: 0.95rem;  /* Smaller font size */
+  margin-left: 20px;
+  font-size: 0.95rem;
   width: 100%;
-  max-width: 300px; /* Restrict width of the details container */
+  max-width: 300px;
 }
 
 .education__degree {
@@ -106,7 +106,6 @@
   color: #444;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .education__timeline {
     flex-direction: column;
