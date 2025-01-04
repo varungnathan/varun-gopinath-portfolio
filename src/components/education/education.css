@@ -1,99 +1,131 @@
 /* src\components\education\education.css */
 
-.education {
-    margin-top: var(--mb-3);
-    padding: 2rem 0;
-    text-align: center;
-  }
-  
-  .education__title {
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-medium);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: var(--mb-2);
-  }
-  
-  .education__icon {
-    margin-right: 1rem;
-    font-size: 2rem;
-    color: var(--title-color);
-  }
-  
-  .education__items {
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
-    flex-wrap: wrap;
-    margin-top: var(--mb-2);
-    padding: 0 2rem;
-  }
-  
-  .education__item {
-    padding: 1.5rem;
-    background-color: var(--container-color);
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
+.education__section {
+  padding: 3rem 0;
+}
+
+.section__title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.section__subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.education__timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 50px; /* Adjust padding for better centering */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.education__bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #ccc; /* Light grey line */
+}
+
+.education__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Take up full width of the container */
+  max-width: 400px; /* Limit width for better visual alignment */
+}
+
+.education__item:hover .education__details {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.education__circle {
+  width: 12px;
+  height: 12px;
+  background-color: var(--title-color); /* Default circle color */
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+
+.education__circle.right {
+  right: -7px; /* Position it on the right side of the line */
+}
+
+.education__circle.left {
+  left: -7px; /* Position it on the left side of the line */
+}
+
+.education__item-postgrad .education__circle {
+  background-color: #00796b; /* Dark teal for Postgraduate */
+}
+
+.education__item-undergrad .education__circle {
+  background-color: #0288d1; /* Blue for Undergraduate */
+}
+
+.education__details {
+  margin-left: 20px; /* Move details closer to the line */
+  font-size: 0.95rem;  /* Smaller font size */
+  width: 100%;
+  max-width: 300px; /* Restrict width of the details container */
+}
+
+.education__degree {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.education__institution {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.education__date {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.education__gpa {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .education__timeline {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    max-width: 600px;
-    width: 100%;
-    margin: 0;
+    gap: 3rem;
+    padding: 3rem 20px;
   }
-  
-  .education__degree {
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-5);
-  }
-  
-  .education__institution {
-    font-size: var(--normal-font-size);
-    color: var(--text-color);
-    margin-bottom: var(--mb-0-5);
-  }
-  
+
   .education__details {
-    font-size: var(--normal-font-size);
-    color: var(--text-color);
-    margin-bottom: var(--mb-0-5);
+    width: 100%;
   }
-  
-  .education__date,
-  .education__gpa {
-    font-size: var(--normal-font-size);
-    color: var(--text-color-light);
+}
+
+@media (max-width: 576px) {
+  .section__title {
+    font-size: 1.8rem;
   }
-  
-  .education__divider {
-    width: 1px;
-    background-color: var(--text-color);
-    height: 100%;
-    max-height: 300px;
-    align-self: center;
-    margin: 0 3rem;
+
+  .education__degree {
+    font-size: 1.2rem;
   }
-  
-  @media screen and (max-width: 768px) {
-    .education__title {
-      font-size: var(--h3-font-size);
-    }
-  
-    .education__item {
-      padding: 1rem;
-      width: 100%;
-    }
-  
-    .education__degree {
-      font-size: var(--h3-font-size);
-    }
-  
-    .education__date,
-    .education__gpa {
-      font-size: var(--smaller-font-size);
-    }
-  }
-  
+}
