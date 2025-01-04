@@ -7,20 +7,22 @@ import Home from './components/header/Home/Home';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import Education from './components/education/Education';
+import Project from './components/projects/Projects';
 
 const App = () => {
   return (
     <>
-    <Header />
+      <Header />
     
-  <main className='main'>
-    <Home />
-    <About />
-    <Skills />
-    <Education />
-  </main>
+      <main className='main'>
+        <Home />
+        <About />
+        <Skills />
+        <Education />
+        <Project />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
