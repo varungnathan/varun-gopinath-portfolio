@@ -30,16 +30,16 @@ const Project = () => {
                 <span>React</span>
               </div>
               <div className="tech-item">
-                <SiFirebase className="tech-icon" />
-                <span>Firebase</span>
+                <FaNodeJs className="tech-icon" />
+                <span>Node.js</span>
               </div>
               <div className="tech-item">
                 <SiMongodb className="tech-icon" />
                 <span>MongoDB</span>
               </div>
               <div className="tech-item">
-                <FaNodeJs className="tech-icon" />
-                <span>Node.js</span>
+                <SiFirebase className="tech-icon" />
+                <span>Firebase</span>
               </div>
               <div className="tech-item">
                 <SiNetlify className="tech-icon" />
