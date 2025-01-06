@@ -1,3 +1,5 @@
+// src\components\projects\Projects.jsx
+
 import React from 'react';
 import './projects.css';
 import { FaReact, FaNodeJs } from 'react-icons/fa';

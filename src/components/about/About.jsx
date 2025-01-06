@@ -18,11 +18,13 @@ const About = () => {
             <div className="about__data">
                 <Info />
 
-                <p className="about__description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 
-                    45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical 
-                    literature, discovered the undoubtable source. 
-                    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC
-                    </p>
+                <p className="about__description">
+                  I am a recent graduate in Web Development from Conestoga College, with a strong foundation in both frontend and backend technologies. 
+                  I am proficient in HTML, CSS, and JavaScript for creating responsive and dynamic web applications, along with expertise in React for building interactive UIs. 
+                  On the backend, I have hands-on experience with PHP, Node.js, Python, and SQL, enabling me to build scalable and efficient web applications. 
+                  In addition to web development, I am passionate about mobile development using Kotlin and have worked on cross-platform projects using React Native and Expo. 
+                  With a focus on delivering seamless user experiences, I am constantly exploring new technologies to stay ahead of industry trends and build robust applications across platforms.
+                </p>
                     <a download="" href={CV} className="button button--flex">Download CV
                         <svg
                 class="button__icon"

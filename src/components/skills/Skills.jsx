@@ -1,4 +1,4 @@
-
+// src\components\skills\Skills.jsx
 
 import React, { useEffect } from 'react';
 import './skills.css';
