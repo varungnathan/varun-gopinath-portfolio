@@ -1,0 +1,30 @@
+/* src/components/contact/contact.css */
+
+.contact__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-modal);
+}
+
+.contact__modal-content {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.contact__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

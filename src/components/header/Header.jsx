@@ -2,9 +2,19 @@
 
 import React, { useState } from 'react';
 import './header.css';
+import Contact from '../contact/Contact';
 
 const Header = () => {
   const [Toggle, showMenu] = useState(false);
+  const [showContact, setShowContact] = useState(false);
+
+  const handleContactClick = () => {
+    setShowContact(true);
+  };
+
+  const handleCloseContact = () => {
+    setShowContact(false);
+  };
 
   return (
     <header className="header">
@@ -43,7 +53,7 @@ const Header = () => {
             </li>
 
             <li className="nav__item">
-              <a href="#contact" className="nav__link">
+              <a href="#contact" className="nav__link" onClick={handleContactClick}>
                 <i className="uil uil-message nav__icon"></i> Contact
               </a>
             </li>
@@ -55,6 +65,8 @@ const Header = () => {
           <i className="uil uil-apps"></i>
         </div>
       </nav>
+
+      <Contact show={showContact} onClose={handleCloseContact} />
     </header>
   );
 };
