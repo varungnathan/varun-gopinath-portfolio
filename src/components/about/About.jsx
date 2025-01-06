@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import CV from '../../assets/cv.pdf'
+import CV from '../../assets/cv.docx'
 import Info from './Info'
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
                   I am a recent graduate in Web Development from Conestoga College, with a strong foundation in both frontend and backend technologies. 
                   I am proficient in HTML, CSS, and JavaScript for creating responsive and dynamic web applications, along with expertise in React for building interactive UIs. 
                   On the backend, I have hands-on experience with PHP, Node.js, Python, and SQL, enabling me to build scalable and efficient web applications. 
-                  In addition to web development, I am passionate about mobile development using Kotlin and have worked on cross-platform projects using React Native and Expo. 
+                  In addition to web development, I am passionate about mobile development using Kotlin and have worked on cross-platform projects using React Native. 
                   With a focus on delivering seamless user experiences, I am constantly exploring new technologies to stay ahead of industry trends and build robust applications across platforms.
                 </p>
                 <a download="" href={CV} className="button button--flex">Download CV
