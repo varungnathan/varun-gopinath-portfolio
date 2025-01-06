@@ -20,10 +20,12 @@
 .home__social-icon {
     font-size: 3rem;
     color: var(--title-color);
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .home__social-icon:hover {
     color: var(--title-color-darker);
+    transform: scale(1.1);
 }
 
 .home__data {
