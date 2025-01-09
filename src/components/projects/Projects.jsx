@@ -1,11 +1,17 @@
-// src\components\projects\Projects.jsx
-
-import React from 'react';
+import React, { useState } from 'react';
 import './projects.css';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiFirebase, SiMongodb, SiNetlify, SiRender } from 'react-icons/si';
+import { SiFirebase, SiMongodb, SiNetlify, SiRender, SiOpencv, SiTensorflow, SiSqlite } from 'react-icons/si';
+import { FaPython } from 'react-icons/fa';
+import ProjectDetails from './ProjectDetails';
 
 const Project = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
   return (
     <div id="projects" className="project-container">
       <h1 className="project-title">My Projects</h1>
@@ -65,31 +71,40 @@ const Project = () => {
         <div className="project-item">
           <div className="project-preview">
             <iframe
-              src="https://your-other-website-link.com"
-              title="Project 2"
-              className="project-iframe"
-              scrolling="no"
-            />
+              src="https://your-other-website-link.com" 
+              title="Automated Attendance System" 
+              className="project-iframe" 
+              scrolling="no" 
+            /> 
           </div>
           <div className="project-details">
-            <h2>Project 2: Another Project</h2>
+            <h2>Automated Attendance System Based on Face Recognition & Live Video Processing</h2>
             <p className="project-description">
-              This project is about a different type of website where I implemented...
+              An automated attendance marking system based on face recognition technology with live video processing. The system captures video using a camera module, processes it in real-time to detect and recognize faces, and marks attendance accordingly.
             </p>
             <h3 className="technologies-title">Technologies Used:</h3>
             <div className="technologies-used">
-              {/* Add appropriate icons for technologies */}
+              <div className="tech-item">
+                <FaPython className="tech-icon" />
+                <span>Python</span>
+              </div>
+              <div className="tech-item">
+                <SiOpencv className="tech-icon" />
+                <span>OpenCV</span>
+              </div>
+              <div className="tech-item">
+                <SiTensorflow className="tech-icon" />
+                <span>TensorFlow</span>
+              </div>
+              <div className="tech-item">
+                <SiSqlite className="tech-icon" />
+                <span>SQLite</span>
+              </div>
             </div>
-            <a
-              href="https://your-other-website-link.com"
-              className="project-button"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open Project
-            </a>
+            <button onClick={togglePopup} className="know-more-button">Know More</button>
+            <ProjectDetails show={showPopup} onClose={togglePopup} />
           </div>
-        </div>
+        </div> 
       </div>
     </div>
   );

@@ -77,11 +77,21 @@
   padding: 8px 12px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: scale(1.05);
+  background-color: var(--hover-background-color);
 }
 
 .tech-icon {
   font-size: 28px;
   color: var(--title-color-dark);
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
 }
 
 .project-button {
