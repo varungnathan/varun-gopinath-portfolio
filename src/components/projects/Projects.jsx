@@ -4,6 +4,13 @@ import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiFirebase, SiMongodb, SiNetlify, SiRender, SiOpencv, SiTensorflow, SiSqlite } from 'react-icons/si';
 import { FaPython } from 'react-icons/fa';
 import ProjectDetails from './ProjectDetails';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+import loginImage from '../../assets/Login.jpg';
+import markedAttendanceImage from '../../assets/Marked Attendance.jpg';
+import occludedFaceDetectionImage from '../../assets/Occluded Face Detection.jpg';
+import outputImage from '../../assets/Output.jpg';
 
 const Project = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -11,6 +18,13 @@ const Project = () => {
   const togglePopup = () => {
     setShowPopup(!showPopup);
   };
+
+  const sliderImages = [
+    { src: loginImage, alt: 'Login', description: 'Login.jpg' },
+    { src: markedAttendanceImage, alt: 'Marked Attendance', description: 'Marked Attendance.jpg' },
+    { src: occludedFaceDetectionImage, alt: 'Occluded Face Detection', description: 'Occluded Face Detection.jpg' },
+    { src: outputImage, alt: 'Output', description: 'Output.jpg' },
+  ];
 
   return (
     <div id="projects" className="project-container">
@@ -70,12 +84,14 @@ const Project = () => {
 
         <div className="project-item">
           <div className="project-preview">
-            <iframe
-              src="https://your-other-website-link.com" 
-              title="Automated Attendance System" 
-              className="project-iframe" 
-              scrolling="no" 
-            /> 
+            <Carousel className="project-carousel" showThumbs={false} infiniteLoop useKeyboardArrows autoPlay>
+              {sliderImages.map((image, index) => (
+                <div key={index}>
+                  <img src={image.src} alt={image.alt} />
+                  <p className="legend">{image.description}</p>
+                </div>
+              ))}
+            </Carousel>
           </div>
           <div className="project-details">
             <h2>Automated Attendance System Based on Face Recognition & Live Video Processing</h2>
@@ -104,7 +120,7 @@ const Project = () => {
             <button onClick={togglePopup} className="know-more-button">Know More</button>
             <ProjectDetails show={showPopup} onClose={togglePopup} />
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   );
