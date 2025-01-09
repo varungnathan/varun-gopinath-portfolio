@@ -14,9 +14,18 @@ import outputImage from '../../assets/Output.jpg';
 
 const Project = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [modalImage, setModalImage] = useState(null);
 
   const togglePopup = () => {
     setShowPopup(!showPopup);
+  };
+
+  const openModal = (image) => {
+    setModalImage(image);
+  };
+
+  const closeModal = () => {
+    setModalImage(null);
   };
 
   const sliderImages = [
@@ -86,7 +95,7 @@ const Project = () => {
           <div className="project-preview">
             <Carousel className="project-carousel" showThumbs={false} infiniteLoop useKeyboardArrows autoPlay>
               {sliderImages.map((image, index) => (
-                <div key={index}>
+                <div key={index} onClick={() => openModal(image.src)}>
                   <img src={image.src} alt={image.alt} />
                   <p className="legend">{image.description}</p>
                 </div>
@@ -122,6 +131,13 @@ const Project = () => {
           </div>
         </div>
       </div>
+
+      {modalImage && (
+        <div className="modal" onClick={closeModal}>
+          <span className="close">&times;</span>
+          <img className="modal-content" src={modalImage} alt="Expanded view" />
+        </div>
+      )}
     </div>
   );
 };
