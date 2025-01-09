@@ -20,11 +20,11 @@ const Project = () => {
   };
 
   const sliderImages = [
-    { src: loginImage, alt: 'Login', description: 'Login.jpg' },
-    { src: markedAttendanceImage, alt: 'Marked Attendance', description: 'Marked Attendance.jpg' },
-    { src: occludedFaceDetectionImage, alt: 'Occluded Face Detection', description: 'Occluded Face Detection.jpg' },
-    { src: outputImage, alt: 'Output', description: 'Output.jpg' },
-  ];
+    { src: loginImage, alt: 'Login', description: 'Login Page', id: 'login-description' },
+    { src: markedAttendanceImage, alt: 'Marked Attendance', description: 'Marked Attendance', id: 'attendance-description' },
+    { src: occludedFaceDetectionImage, alt: 'Occluded Face Detection', description: 'Occluded Face Detection', id: 'face-detection-description' },
+    { src: outputImage, alt: 'Output', description: 'Output', id: 'output-description' },
+  ];  
 
   return (
     <div id="projects" className="project-container">
@@ -101,19 +101,19 @@ const Project = () => {
             <h3 className="technologies-title">Technologies Used:</h3>
             <div className="technologies-used">
               <div className="tech-item">
-                <FaPython className="tech-icon" />
+                <FaPython className="tech-icon" style={{ color: 'var(--title-color)' }} />
                 <span>Python</span>
               </div>
               <div className="tech-item">
-                <SiOpencv className="tech-icon" />
+                <SiOpencv className="tech-icon" style={{ color: 'var(--title-color)' }} />
                 <span>OpenCV</span>
               </div>
               <div className="tech-item">
-                <SiTensorflow className="tech-icon" />
+                <SiTensorflow className="tech-icon" style={{ color: 'var(--title-color)' }} />
                 <span>TensorFlow</span>
               </div>
               <div className="tech-item">
-                <SiSqlite className="tech-icon" />
+                <SiSqlite className="tech-icon" style={{ color: 'var(--title-color)' }} />
                 <span>SQLite</span>
               </div>
             </div>
