@@ -1,0 +1,50 @@
+.paper-container {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .paper-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .paper-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .paper-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .paper-link:hover {
+    text-decoration: underline;
+  }
+
+.paper-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.paper-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
