@@ -1,3 +1,5 @@
+// src\components\projects\ProjectDetails.jsx
+
 import React from 'react';
 import './projects.css';
 
