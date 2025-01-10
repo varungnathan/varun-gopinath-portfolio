@@ -47,6 +47,8 @@
   font-size: 1.1rem;
   font-weight: var(--font-medium);
   color: var(--text-color-dark);
+  display: flex;
+  align-items: center;
 }
 
 .skill__bar-container {
@@ -78,6 +80,11 @@
   color: var(--text-color-dark);
   text-align: right;
   white-space: nowrap;
+}
+
+.skill-icon {
+  font-size: 2rem; /* Increase the icon size */
+  margin-right: 10px; /* Add padding between the icon and the name */
 }
 
 @media screen and (max-width: 992px) {

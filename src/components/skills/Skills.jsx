@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPhp, FaDatabase, FaPython, FaAndroid, FaCloud } from 'react-icons/fa';
-import { SiFirebase, SiSelenium, SiGit } from 'react-icons/si';
+import { SiFirebase, SiSelenium, SiGit, SiMongodb } from 'react-icons/si';
 import './skills.css';
 
 const Skills = () => {
@@ -10,36 +10,35 @@ const Skills = () => {
     {
       title: 'Web Development',
       skills: [
-        { name: 'HTML', level: 90, icon: <FaHtml5 color="#E34F26" /> },
-        { name: 'CSS', level: 90, icon: <FaCss3Alt color="#1572B6" /> },
-        { name: 'JavaScript', level: 80, icon: <FaJs color="#F7DF1E" /> },
-        { name: 'React Js', level: 75, icon: <FaReact color="#61DAFB" /> },
-        { name: 'Bootstrap', level: 70, icon: <FaBootstrap color="#7952B3" /> },
+        { name: 'HTML', level: 90, icon: <FaHtml5 className="skill-icon" color="#E34F26" /> },
+        { name: 'CSS', level: 90, icon: <FaCss3Alt className="skill-icon" color="#1572B6" /> },
+        { name: 'JavaScript', level: 80, icon: <FaJs className="skill-icon" color="#F7DF1E" /> },
+        { name: 'React Js', level: 75, icon: <FaReact className="skill-icon" color="#61DAFB" /> },
+        { name: 'Bootstrap', level: 70, icon: <FaBootstrap className="skill-icon" color="#7952B3" /> },
       ],
     },
     {
       title: 'Backend Development',
       skills: [
-        { name: 'Node JS', level: 80, icon: <FaNodeJs color="#339933" /> },
-        { name: 'PHP', level: 75, icon: <FaPhp color="#777BB4" /> },
-        { name: 'MySQL', level: 90, icon: <FaDatabase color="#4479A1" /> },
-        { name: 'SQL', level: 90, icon: <FaDatabase color="#4479A1" /> },
-        { name: 'Python', level: 80, icon: <FaPython color="#3776AB" /> },
-        ,
+        { name: 'Node JS', level: 80, icon: <FaNodeJs className="skill-icon" color="#339933" /> },
+        { name: 'PHP', level: 75, icon: <FaPhp className="skill-icon" color="#777BB4" /> },
+        { name: 'MySQL', level: 90, icon: <FaDatabase className="skill-icon" color="#4479A1" /> },
+        { name: 'MongoDB', level: 85, icon: <SiMongodb className="skill-icon" color="#47A248" /> },
+        { name: 'Python', level: 80, icon: <FaPython className="skill-icon" color="#3776AB" /> },
       ],
     },
     {
       title: 'Mobile Application Development',
       skills: [
-        { name: 'Kotlin', level: 80, icon: <FaAndroid color="#3DDC84" /> },
-        { name: 'React Native', level: 60, icon: <FaReact color="#61DAFB" /> },
+        { name: 'Kotlin', level: 80, icon: <FaAndroid className="skill-icon" color="#3DDC84" /> },
+        { name: 'React Native', level: 60, icon: <FaReact className="skill-icon" color="#61DAFB" /> },
       ],
     },
     {
       title: 'Cloud',
       skills: [
-        { name: 'AWS', level: 70, icon: <FaCloud color="#FF9900" /> },
-        { name: 'Firebase', level: 90, icon: <SiFirebase color="#FFCA28" /> },
+        { name: 'AWS', level: 70, icon: <FaCloud className="skill-icon" color="#FF9900" /> },
+        { name: 'Firebase', level: 90, icon: <SiFirebase className="skill-icon" color="#FFCA28" /> },
       ],
     },
     {

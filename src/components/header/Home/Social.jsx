@@ -56,7 +56,7 @@ const Social = () => {
       </a>
 
       <a
-        href="https://github.com/varungnath"
+        href="https://github.com/varungnathan"
         className="home__social-icon"
         target="_blank"
         rel="noreferrer"
