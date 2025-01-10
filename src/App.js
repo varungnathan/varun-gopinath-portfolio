@@ -1,6 +1,6 @@
 // src\App.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/header/Home/Home';
@@ -17,6 +17,18 @@ const App = () => {
   const toggleProjectPopup = () => {
     setShowProjectPopup(!showProjectPopup);
   };
+
+  useEffect(() => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  }, []);
 
   return (
     <>
