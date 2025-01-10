@@ -17,7 +17,6 @@ nav {
     column-gap: 1rem;
 }
 
-/* Extra Modification. Later checking needed */
 .nav__logo{
     color: var(--title-color);
     font-weight: var(--font-medium);  
@@ -44,6 +43,28 @@ nav {
     font-weight: var(--font-medium);
     transition: .3s;
     font-size: 1.1rem;
+    position: relative;
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #0092ed;
+    bottom: -5px;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.active-link,
+.nav__link:hover {
+    color: var(--title-color-dark);
 }
 
 .nav__icon,
@@ -52,14 +73,6 @@ nav {
     display: none;
 }
 
-/* Active Link */
-
-.active-link,
-.nav__link:hover {
-    color: var(--title-color-dark);
-}
-/*=============== BREAKPOINTS ===============*/
-/* For medium devices */
 @media screen and (max-width: 768px) {
     .header {
         top: initial;
@@ -82,7 +95,6 @@ nav {
         transition: .3s;
     }
 
-    /* Show Menu */
     .show-menu {
         bottom: 0;
     }
@@ -98,7 +110,7 @@ nav {
     }
 
     .nav__close {
-        position:absolute;
+        position: absolute;
         right: 1.3rem;
         bottom: .5rem;
         font-size: 1.5rem;
@@ -122,7 +134,6 @@ nav {
     }
 }
 
-/* For small devices */
 @media screen and (max-width: 350px) {
     .nav__menu {
         padding: 2rem .25rem 4rem;
