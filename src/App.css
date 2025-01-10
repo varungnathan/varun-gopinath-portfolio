@@ -13,8 +13,10 @@
   --title-color: hsl(var(--hue), var(--sat), 0%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 0%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
+  --body-color: #F5F5DC;
+  --container-color: #E0E0C0;
+  --font-color: #4B4B4B;
+  --font-color-alt: #3B3B3B;
 
   /*========== Font and typography ==========*/
   --body-font: "EB Garamond", serif;
@@ -84,7 +86,7 @@ textarea {
 
 body {
   background-color: var(--body-color);
-  color: var(--text-color);
+  color: var(--font-color);
   opacity: 0;
   animation: fadeIn 2s forwards;
 }
