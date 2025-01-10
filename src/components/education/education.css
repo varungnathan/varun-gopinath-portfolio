@@ -87,10 +87,6 @@
   max-width: 400px;
 }
 
-.education__item:hover .education__details {
-  transform: translateX(5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
 
 .education__circle {
   width: 12px;
