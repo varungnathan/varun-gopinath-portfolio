@@ -76,7 +76,9 @@ const Skills = () => {
             <div className="skills__group">
               {group.skills.map((skill) => (
                 <div className="skills__data" key={skill.name}>
-                  <h4 className="skills__name">{skill.icon} {skill.name}</h4>
+                  <h4 className="skills__name">
+                    {skill.icon} <span className="typing-effect">{skill.name}</span>
+                  </h4>
                   <div className="skill__bar-container">
                     <div className="skill__bar">
                       <div
