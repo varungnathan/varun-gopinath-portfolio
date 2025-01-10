@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPhp, FaPython, FaAndroid, FaCloud } from 'react-icons/fa';
-import { SiFirebase, SiSelenium, SiGit, SiMongodb, SiMysql } from 'react-icons/si';
+import { SiFirebase, SiMongodb, SiMysql } from 'react-icons/si';
 import './skills.css';
 
 const Skills = () => {
@@ -13,7 +13,7 @@ const Skills = () => {
         { name: 'HTML', level: 90, icon: <FaHtml5 className="skill-icon" color="#E34F26" /> },
         { name: 'CSS', level: 90, icon: <FaCss3Alt className="skill-icon" color="#1572B6" /> },
         { name: 'JavaScript', level: 80, icon: <FaJs className="skill-icon" color="#F7DF1E" /> },
-        { name: 'React Js', level: 75, icon: <FaReact className="skill-icon" color="#61DAFB" /> },
+        { name: 'React Js', level: 75, icon: <FaReact className="skill-icon" color="#1E90FF" /> },
         { name: 'Bootstrap', level: 70, icon: <FaBootstrap className="skill-icon" color="#7952B3" /> },
       ],
     },
@@ -31,7 +31,7 @@ const Skills = () => {
       title: 'Mobile Application Development',
       skills: [
         { name: 'Kotlin', level: 80, icon: <FaAndroid className="skill-icon" color="#3DDC84" /> },
-        { name: 'React Native', level: 60, icon: <FaReact className="skill-icon" color="#61DAFB" /> },
+        { name: 'React Native', level: 60, icon: <FaReact className="skill-icon" color="#1E90FF" /> },
       ],
     },
     {
@@ -39,13 +39,6 @@ const Skills = () => {
       skills: [
         { name: 'AWS', level: 70, icon: <FaCloud className="skill-icon" color="#FF9900" /> },
         { name: 'Firebase', level: 90, icon: <SiFirebase className="skill-icon" color="#FFCA28" /> },
-      ],
-    },
-    {
-      title: 'Quality Assurance + Website Security',
-      skills: [
-        { name: 'Python Selenium', level: 80, icon: <SiSelenium color="#43B02A" /> },
-        { name: 'Git', level: 75, icon: <SiGit color="#F05032" /> },
       ],
     },
   ];
