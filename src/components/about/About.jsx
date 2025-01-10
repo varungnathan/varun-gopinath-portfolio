@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import CV from '../../assets/cv.docx'
+// import CV from '../../assets/cv.docx'
 import Info from './Info'
 
 const About = () => {
@@ -20,7 +20,7 @@ const About = () => {
                   In addition to web development, I am passionate about mobile development using Kotlin and have worked on cross-platform projects using React Native. 
                   With a focus on delivering seamless user experiences, I am constantly exploring new technologies to stay ahead of industry trends and build robust applications across platforms.
                 </p>
-                <a download="" href={CV} className="button button--flex">Download CV
+                {/* <a download="" href={CV} className="button button--flex">Download CV
                     <svg
                       className="button__icon"
                       xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const About = () => {
                         fill="var(--container-color)"
                       ></path>
                     </svg>
-                </a>
+                </a> */}
             </div>
         </div>
     </section>
