@@ -1,7 +1,7 @@
-/* src\components\education\education.css */c
+/* src\components\education\education.css */
 
 .education__section {
-  padding:i 3rem 0;
+  padding: 3rem 0;
 }
 
 .section__title {
@@ -31,10 +31,10 @@
   top: 0;
   bottom: 0;
   left: 50%;
-  width: 2px;
+  width: 4px; /* Increased width */
   background-color: #59a1ce;
-  border-right: 2px solid #adcbde;
-  animation: blink-cursor 1s step-end infinite;
+  border-right: 4px solid #adcbde; /* Increased border width */
+  transition: background-color 0.5s ease, border-color 0.5s ease; /* Added smoother transition */
 }
 
 @keyframes wipeInLeft {
@@ -143,26 +143,31 @@
 }
 
 .education__degree {
-  font-size: 1.3rem; /* Increased from 1.1rem to 1.3rem */
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .education__institution {
   font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
   color: #666;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .education__date {
   font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
   font-weight: 500;
   color: #444;
+  text-align: center;
 }
 
 .education__gpa {
   font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
   font-weight: 500;
   color: #444;
+  text-align: center;
 }
 
 .education__container {

@@ -1,5 +1,3 @@
-/* src\components\skills\skills.css */
-
 .skills__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -76,15 +74,16 @@
 }
 
 .skills__level {
-  font-size: 0.9rem;
+  font-size: 1.2 rem;
+  font-weight: bold;
   color: var(--text-color-dark);
   text-align: right;
   white-space: nowrap;
 }
 
 .skill-icon {
-  font-size: 2rem; /* Increase the icon size */
-  margin-right: 10px; /* Add padding between the icon and the name */
+  font-size: 2rem;
+  margin-right: 10px;
 }
 
 @keyframes typing {
@@ -101,7 +100,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: black;
+    border-color: #E0E0C0;
   }
 }
 
@@ -109,8 +108,14 @@
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid black;
+  border-right: 2px solid #E0E0C0;
   animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+  animation-fill-mode: forwards;
+}
+
+.typing-effect.no-cursor {
+  border-right: none;
+  animation: typing 2s steps(30, end);
 }
 
 @media screen and (max-width: 992px) {

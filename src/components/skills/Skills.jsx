@@ -12,7 +12,7 @@ const Skills = () => {
       skills: [
         { name: 'HTML', level: 90, icon: <FaHtml5 className="skill-icon" color="#E34F26" /> },
         { name: 'CSS', level: 90, icon: <FaCss3Alt className="skill-icon" color="#1572B6" /> },
-        { name: 'JavaScript', level: 80, icon: <FaJs className="skill-icon" color="#F7DF1E" /> },
+        { name: 'JavaScript', level: 80, icon: <FaJs className="skill-icon" color="#DAA520" /> }, // Darker color for JavaScript
         { name: 'React Js', level: 75, icon: <FaReact className="skill-icon" color="#1E90FF" /> },
         { name: 'Bootstrap', level: 70, icon: <FaBootstrap className="skill-icon" color="#7952B3" /> },
       ],
@@ -51,6 +51,14 @@ const Skills = () => {
             const progressBars = entry.target.querySelectorAll('.skill__progress');
             progressBars.forEach((bar) => {
               bar.style.width = bar.getAttribute('data-level');
+            });
+
+            const typingElements = entry.target.querySelectorAll('.typing-effect');
+            typingElements.forEach((element) => {
+              element.classList.add('blink-caret');
+              setTimeout(() => {
+                element.classList.remove('blink-caret');
+              }, 2000); // Match this duration with the typing animation duration
             });
           }
         });
