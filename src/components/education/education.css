@@ -33,6 +33,8 @@
   left: 50%;
   width: 2px;
   background-color: #59a1ce;
+  border-right: 2px solid #adcbde;
+  animation: blink-cursor 1s step-end infinite;
 }
 
 @keyframes wipeInLeft {
@@ -54,6 +56,15 @@
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes blink-cursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #012439;
   }
 }
 
