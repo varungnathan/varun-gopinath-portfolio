@@ -1,7 +1,7 @@
-/* src\components\education\education.css */
+/* src\components\education\education.css */c
 
 .education__section {
-  padding: 3rem 0;
+  padding:i 3rem 0;
 }
 
 .section__title {
@@ -32,7 +32,7 @@
   bottom: 0;
   left: 50%;
   width: 2px;
-  background-color: green; /* Changed to green */
+  background-color: #59a1ce;
 }
 
 @keyframes wipeInLeft {
@@ -85,10 +85,11 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 400px;
+  padding: 1rem 0; /* Added padding to ensure equal spacing */
 }
 
-
 .education__circle {
+  display: none;
   width: 12px;
   height: 12px;
   background-color: var(--title-color);
@@ -159,6 +160,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: max-content;
+  margin: 0 auto; /* Center the container */
 }
 
 @media (max-width: 768px) {
