@@ -1,6 +1,7 @@
 // src\App.js
 
-import React, { useState, useEffect } from 'react';
+// import { useState } from 'react';
+import { useEffect } from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/header/Home/Home';
