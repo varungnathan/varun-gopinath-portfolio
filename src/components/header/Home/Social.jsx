@@ -3,11 +3,13 @@
 import React, { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 import githubAnimationData from '../../animation/Animation - 1736462575324.json';
-import linkedinAnimationData from '../../animation/Animation - 1736463467992.json';
+import linkedinAnimationData from '../../animation/linkedin.json';
+import mailAnimationData from '../../animation/Mail.json';
 
 const Social = () => {
   const githubIconRef = useRef(null);
   const linkedinIconRef = useRef(null);
+  const mailIconRef = useRef(null);
 
   useEffect(() => {
     const githubAnimationInstance = lottie.loadAnimation({
@@ -26,9 +28,18 @@ const Social = () => {
       animationData: linkedinAnimationData,
     });
 
+    const mailAnimationInstance = lottie.loadAnimation({
+      container: mailIconRef.current,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: mailAnimationData,
+    });
+
     return () => {
       githubAnimationInstance.destroy();
       linkedinAnimationInstance.destroy();
+      mailAnimationInstance.destroy();
     };
   }, []);
 
@@ -59,7 +70,7 @@ const Social = () => {
         className="home__social-icon"
         aria-label="Email"
       >
-        <i className="uil uil-envelope-alt"></i>
+        <div ref={mailIconRef} style={{ width: 50, height: 50 }}></div>
       </a>
     </div>
   );
