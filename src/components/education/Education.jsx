@@ -46,24 +46,28 @@ const Education = () => {
 
       <div className="education__timeline">
         <div className="education__item education__item-postgrad" ref={postgradRef}>
-          <div className="education__circle right"></div>
-          <div className="education__details">
-            <h3 className="education__degree">Post Graduate Degree in Web Development</h3>
-            <p className="education__institution">Conestoga College, Kitchener, Ontario, Canada</p>
-            <p className="education__date">2023 - 2024</p>
-            <p className="education__gpa">Grade: 3.31 GPA</p>
+          <div className="education__container">
+            <div className="education__circle education__circle-postgrad right"></div>
+            <div className="education__details">
+              <h3 className="education__degree">Post Graduate Degree in Web Development</h3>
+              <p className="education__institution">Conestoga College, Kitchener, Ontario, Canada</p>
+              <p className="education__date">2023 - 2024</p>
+              <p className="education__gpa">Grade: 3.31 GPA</p>
+            </div>
           </div>
         </div>
 
         <div className="education__bar"></div>
 
         <div className="education__item education__item-undergrad" ref={undergradRef}>
-          <div className="education__circle left"></div>
-          <div className="education__details">
-            <h3 className="education__degree">B.Tech in Computer Science & Engineering</h3>
-            <p className="education__institution">Mangalam College of Engineering, APJ Abdul Kalam Technological University</p>
-            <p className="education__date">2017 - 2021</p>
-            <p className="education__gpa">Grade: 7.20 GPA</p>
+          <div className="education__container">
+            <div className="education__circle education__circle-undergrad left"></div>
+            <div className="education__details">
+              <h3 className="education__degree">B.Tech in Computer Science & Engineering</h3>
+              <p className="education__institution">Kerala Technological University, Kerala, India</p>
+              <p className="education__date">2017 - 2021</p>
+              <p className="education__gpa">Grade: 7.20 GPA</p>
+            </div>
           </div>
         </div>
       </div>

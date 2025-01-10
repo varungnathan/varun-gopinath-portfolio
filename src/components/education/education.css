@@ -32,7 +32,7 @@
   bottom: 0;
   left: 50%;
   width: 2px;
-  background-color: #ccc;
+  background-color: green; /* Changed to green */
 }
 
 @keyframes wipeInLeft {
@@ -103,10 +103,20 @@
 
 .education__circle.right {
   right: -7px;
+  background-color: #33A8F1; /* New color for right circle */
 }
 
 .education__circle.left {
   left: -7px;
+  background-color: #66BDF4; /* New color for left circle */
+}
+
+.education__circle-postgrad {
+  background-color: red;
+}
+
+.education__circle-undergrad {
+  background-color: blue;
 }
 
 .education__item-postgrad .education__circle {
@@ -145,6 +155,13 @@
   font-size: 1rem;
   font-weight: 500;
   color: #444;
+}
+
+.education__container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
