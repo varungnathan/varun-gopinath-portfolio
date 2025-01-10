@@ -35,6 +35,47 @@
   background-color: #ccc;
 }
 
+@keyframes wipeInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes wipeInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.education__item {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.education__item-postgrad {
+  transform: translateX(-100%);
+}
+
+.education__item-undergrad {
+  transform: translateX(100%);
+}
+
+.education__item-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .education__item {
   position: relative;
   display: flex;
