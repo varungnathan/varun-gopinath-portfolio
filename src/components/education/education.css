@@ -135,33 +135,34 @@
 }
 
 .education__degree {
-  font-size: 1.1rem;
+  font-size: 1.3rem; /* Increased from 1.1rem to 1.3rem */
   font-weight: 600;
 }
 
 .education__institution {
-  font-size: 1rem;
+  font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
   color: #666;
   margin-bottom: 0.5rem;
 }
 
 .education__date {
-  font-size: 1rem;
+  font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
   font-weight: 500;
   color: #444;
 }
 
 .education__gpa {
-  font-size: 1rem;
+  font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
   font-weight: 500;
   color: #444;
 }
 
 .education__container {
-  background-color: white;
+  background-color: var(--container-color, #E0E0C0); /* Changed to use --container-color */
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: max-content;
 }
 
 @media (max-width: 768px) {
