@@ -33,10 +33,15 @@
 }
 
 .button--flex {
+  background-color: rgb(24, 38, 45);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+
+.button--flex:hover {
+  background-color: rgb(47, 81, 97);
 }
 
 .about__box {

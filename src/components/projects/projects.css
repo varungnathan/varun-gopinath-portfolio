@@ -88,7 +88,7 @@
 }
 
 .tech-icon {
-  font-size: 28px;
+  font-size: 40px;
   color: var(--title-color-dark);
 }
 
@@ -97,18 +97,21 @@
 }
 
 .project-button {
-  display: inline-block;
-  margin-top: 15px;
-  background-color: var(--title-color);
-  color: var(--container-color);
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: var(--font-medium);
-  text-align: center;
+  background-color: rgb(24, 38, 45);
+  color: white; /* Ensure the text color is readable */
+  border: none; /* Remove any border */
+  padding: 10px 20px; /* Add some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it inline-block */
+  font-size: 16px; /* Adjust the font size */
+  margin: 20px 0; /* Add margin to create space between tech items and button */
+  cursor: pointer; /* Change cursor to pointer */
+  border-radius: 4px; /* Add rounded corners */
 }
 
 .project-button:hover {
-  background-color: var(--title-color-dark);
+  background-color: rgb(47, 81, 97);
 }
 
 .slider-container {
@@ -210,4 +213,8 @@
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.bold {
+  font-size: .89rem;
 }

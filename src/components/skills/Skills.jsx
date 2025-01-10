@@ -1,8 +1,8 @@
 // src\components\skills\Skills.jsx
 
 import React, { useEffect } from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPhp, FaDatabase, FaPython, FaAndroid, FaCloud } from 'react-icons/fa';
-import { SiFirebase, SiSelenium, SiGit, SiMongodb } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPhp, FaPython, FaAndroid, FaCloud } from 'react-icons/fa';
+import { SiFirebase, SiSelenium, SiGit, SiMongodb, SiMysql } from 'react-icons/si';
 import './skills.css';
 
 const Skills = () => {
@@ -22,7 +22,7 @@ const Skills = () => {
       skills: [
         { name: 'Node JS', level: 80, icon: <FaNodeJs className="skill-icon" color="#339933" /> },
         { name: 'PHP', level: 75, icon: <FaPhp className="skill-icon" color="#777BB4" /> },
-        { name: 'MySQL', level: 90, icon: <FaDatabase className="skill-icon" color="#4479A1" /> },
+        { name: 'MySQL', level: 90, icon: <SiMysql className="skill-icon" color="#4479A1" /> },
         { name: 'MongoDB', level: 85, icon: <SiMongodb className="skill-icon" color="#47A248" /> },
         { name: 'Python', level: 80, icon: <FaPython className="skill-icon" color="#3776AB" /> },
       ],

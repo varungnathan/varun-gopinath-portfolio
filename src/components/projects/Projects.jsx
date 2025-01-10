@@ -58,28 +58,28 @@ const Project = () => {
             <h3 className="technologies-title">Technologies Used:</h3>
             <div className="technologies-used">
               <div className="tech-item">
-                <FaReact className="tech-icon" />
-                <span>React</span>
+                <FaReact className="tech-icon" color="#61DAFB" />
+                <span className="tech-name bold">React</span>
               </div>
               <div className="tech-item">
-                <SiFirebase className="tech-icon" />
-                <span>Firebase</span>
+                <SiFirebase className="tech-icon" color="#FFCA28" />
+                <span className="tech-name bold">Firebase</span>
               </div>
               <div className="tech-item">
-                <SiMongodb className="tech-icon" />
-                <span>MongoDB</span>
+                <SiMongodb className="tech-icon" color="#47A248" />
+                <span className="tech-name bold">MongoDB</span>
               </div>
               <div className="tech-item">
-                <FaNodeJs className="tech-icon" />
-                <span>Node.js</span>
+                <FaNodeJs className="tech-icon" color="#339933" />
+                <span className="tech-name bold">Node.js</span>
               </div>
               <div className="tech-item">
-                <SiNetlify className="tech-icon" />
-                <span>Netlify</span>
+                <SiNetlify className="tech-icon" color="#00C7B7" />
+                <span className="tech-name bold">Netlify</span>
               </div>
               <div className="tech-item">
-                <SiRender className="tech-icon" />
-                <span>Render</span>
+                <SiRender className="tech-icon" color="#46E3B7" />
+                <span className="tech-name bold">Render</span>
               </div>
             </div>
             <a
