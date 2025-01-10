@@ -76,7 +76,7 @@
 }
 
 .home__img {
-    background: url(../../../assets/profile.jpg);
+    background: url(../../../assets/profile-color.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -86,27 +86,33 @@
     width: 300px;
     height: 300px;
     animation: profile__animate 8s ease-in-out infinite 1s;
+    border: 5px solid; /* Add this line to define the border */
 }
 
 @keyframes profile__animate {
     0% {
         border-radius: 50% 50% 40% 60% / 60% 40% 50% 50%;
+        border-color: #8B8589; /* Taupe Gray */
     }
 
     25% {
         border-radius: 40% 60% 60% 40% / 50% 50% 40% 60%;
+        border-color: #B0C4DE; /* Light Steel Blue */
     }
 
     50% {
         border-radius: 70% 30% 50% 50% / 40% 70% 30% 60%;
+        border-color: #CFCFC4; /* Pale Silver */
     }
 
     75% {
         border-radius: 30% 70% 60% 40% / 60% 30% 70% 40%;
+        border-color: #D3D3D3; /* Light Gray */
     }
 
     100% {
         border-radius: 50% 50% 40% 60% / 60% 40% 50% 50%;
+        border-color: #8B8589; /* Taupe Gray */
     }
 }
 
