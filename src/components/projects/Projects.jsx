@@ -1,15 +1,13 @@
 // src\components\projects\Projects.jsx
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './projects.css';
-import { FaNodeJs } from 'react-icons/fa';
+import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiFirebase, SiMongodb, SiNetlify, SiRender, SiOpencv, SiTensorflow, SiSqlite } from 'react-icons/si';
 import { FaPython } from 'react-icons/fa';
 import ProjectDetails from './ProjectDetails';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Lottie from 'lottie-react';
-import reactAnimation from '../animation/React.json';
 
 import loginImage from '../../assets/Login.jpg';
 import markedAttendanceImage from '../../assets/Marked Attendance.jpg';
@@ -60,7 +58,7 @@ const Project = () => {
             <h3 className="technologies-title">Technologies Used:</h3>
             <div className="technologies-used">
               <div className="tech-item">
-                <Lottie animationData={reactAnimation} style={{ width: 50, height: 50 }} />
+                <FaReact className="tech-icon" />
                 <span>React</span>
               </div>
               <div className="tech-item">
