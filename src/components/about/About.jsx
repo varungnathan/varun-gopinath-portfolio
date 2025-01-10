@@ -1,3 +1,5 @@
+// src\components\about\About.jsx
+
 import React from 'react'
 import './about.css'
 // import CV from '../../assets/cv.docx'
