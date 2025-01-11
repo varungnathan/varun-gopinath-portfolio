@@ -27,32 +27,18 @@ const ProjectDetails = () => {
         { name: 'MongoDB', icon: 'https://img.icons8.com/color/48/000000/mongodb.png' },
         { name: 'Google Calendar API', icon: 'https://img.icons8.com/color/48/000000/google-calendar.png' },
       ],
-      features: [
-        'Real-time family meal planner',
-        'Recipe recommendations and grocery management',
-        'User authentication with Firebase',
-        'Seamless integration with Google Calendar',
-      ],
-      challenges: [
-        'Handled CORS issues and multi-device synchronization with Firebase',
-        'Addressed Google Calendar OAuth token refresh',
-      ],
       link: 'https://planeat-capstone.netlify.app/',
     },
     {
       title: 'Project 2',
       subtitle: 'Description of Project 2',
       technologies: [],
-      features: [],
-      challenges: [],
       link: '#',
     },
     {
       title: 'Project 3',
       subtitle: 'Description of Project 3',
       technologies: [],
-      features: [],
-      challenges: [],
       link: '#',
     },
   ];

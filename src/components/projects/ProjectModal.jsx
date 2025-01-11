@@ -32,18 +32,6 @@ const ProjectModal = ({ show, onClose, project }) => {
               </div>
             ))}
           </div>
-          <p><strong>Key Features:</strong></p>
-          <div className="project__features">
-            {project.features.map((feature, index) => (
-              <div key={index} className="project__feature">{feature}</div>
-            ))}
-          </div>
-          <p><strong>Challenges & Solutions:</strong></p>
-          <div className="project__challenges">
-            {project.challenges.map((challenge, index) => (
-              <div key={index} className="project__challenge">{challenge}</div>
-            ))}
-          </div>
           <a href={project.link} target="_blank" rel="noopener noreferrer" className="button--flex project__visit-button">
             Visit Website
           </a>
