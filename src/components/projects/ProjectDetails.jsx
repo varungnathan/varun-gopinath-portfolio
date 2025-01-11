@@ -1,16 +1,61 @@
-// src\components\projects\ProjectDetails.jsx
+// src/components/projects/ProjectDetails.jsx
 
 import React, { useState, useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 import project1IconData from '../../components/animation/working1.json';
 import project2IconData from '../../components/animation/Profile.json';
 import project3IconData from '../../components/animation/Hobby.json';
+import ProjectModal from './ProjectModal';
 
 const ProjectDetails = () => {
-  const [showMore, setShowMore] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
   const project1Ref = useRef(null);
   const project2Ref = useRef(null);
   const project3Ref = useRef(null);
+
+  const projects = [
+    {
+      title: 'PlanEat',
+      subtitle: 'A meal planning and grocery management platform for families.',
+      technologies: [
+        { name: 'React.js', icon: 'https://img.icons8.com/color/48/000000/react-native.png' },
+        { name: 'Bootstrap', icon: 'https://img.icons8.com/color/48/000000/bootstrap.png' },
+        { name: 'Node.js', icon: 'https://img.icons8.com/color/48/000000/nodejs.png' },
+        { name: 'Express.js', icon: 'https://img.icons8.com/color/48/000000/express.png' },
+        { name: 'Firebase', icon: 'https://img.icons8.com/color/48/000000/firebase.png' },
+        { name: 'MongoDB', icon: 'https://img.icons8.com/color/48/000000/mongodb.png' },
+        { name: 'Google Calendar API', icon: 'https://img.icons8.com/color/48/000000/google-calendar.png' },
+      ],
+      features: [
+        'Real-time family meal planner',
+        'Recipe recommendations and grocery management',
+        'User authentication with Firebase',
+        'Seamless integration with Google Calendar',
+      ],
+      challenges: [
+        'Handled CORS issues and multi-device synchronization with Firebase',
+        'Addressed Google Calendar OAuth token refresh',
+      ],
+      link: 'https://planeat-capstone.netlify.app/',
+    },
+    {
+      title: 'Project 2',
+      subtitle: 'Description of Project 2',
+      technologies: [],
+      features: [],
+      challenges: [],
+      link: '#',
+    },
+    {
+      title: 'Project 3',
+      subtitle: 'Description of Project 3',
+      technologies: [],
+      features: [],
+      challenges: [],
+      link: '#',
+    },
+  ];
 
   useEffect(() => {
     const project1Animation = lottie.loadAnimation({
@@ -44,57 +89,31 @@ const ProjectDetails = () => {
     };
   }, []);
 
+  const handleShowModal = (project) => {
+    setSelectedProject(project);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setSelectedProject(null);
+  };
+
   return (
     <div className="projects__info grid">
-      <div className="project__box">
-        <div ref={project1Ref} className="project__icon"></div>
-        <h3 className="project__title">PlanEat</h3>
-        <span className="project__subtitle">A meal planning and grocery management platform for families.</span>
-        {/* <p className="project__short-description">
-          PlanEat is a platform designed to address family meal planning and grocery management. It integrates real-time collaboration with features like personalized recipe recommendations, Google Calendar sync, and automated grocery tracking.
-        </p> */}
-        <button className="button--flex project__more-button" onClick={() => setShowMore(!showMore)}>
-          {showMore ? 'Show Less' : 'Know More'}
-        </button>
-        {showMore && (
-          <div className="project__details">
-            <p><strong>Technologies Used:</strong></p>
-            <ul>
-              <li>Frontend: React.js, Bootstrap</li>
-              <li>Backend: Node.js, Express.js</li>
-              <li>Database: Firebase, MongoDB</li>
-              <li>API Integration: Google Calendar API</li>
-              <li>Deployment: Netlify (frontend), Render (backend)</li>
-              <li>Testing: Postman, React Testing Library</li>
-            </ul>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-              <li>Real-time family meal planner</li>
-              <li>Recipe recommendations and grocery management</li>
-              <li>User authentication with Firebase</li>
-              <li>Seamless integration with Google Calendar</li>
-            </ul>
-            <p><strong>Challenges & Solutions:</strong></p>
-            <ul>
-              <li>Handled CORS issues and multi-device synchronization with Firebase</li>
-              <li>Addressed Google Calendar OAuth token refresh</li>
-            </ul>
-            <a href="https://planeat-capstone.netlify.app/" target="_blank" rel="noopener noreferrer" className="button--flex project__visit-button">
-              Visit Website
-            </a>
-          </div>
-        )}
-      </div>
-      <div className="project__box">
-        <div ref={project2Ref} className="project__icon"></div>
-        <h3 className="project__title">Project 2</h3>
-        <span className="project__subtitle">Description of Project 2</span>
-      </div>
-      <div className="project__box">
-        <div ref={project3Ref} className="project__icon"></div>
-        <h3 className="project__title">Project 3</h3>
-        <span className="project__subtitle">Description of Project 3</span>
-      </div>
+      {projects.map((project, index) => (
+        <div key={index} className="project__box">
+          <div ref={index === 0 ? project1Ref : index === 1 ? project2Ref : project3Ref} className="project__icon"></div>
+          <h3 className="project__title">{project.title}</h3>
+          <span className="project__subtitle">{project.subtitle}</span>
+          <button className="button--flex project__more-button" onClick={() => handleShowModal(project)}>
+            Know More
+          </button>
+        </div>
+      ))}
+      {selectedProject && (
+        <ProjectModal show={showModal} onClose={handleCloseModal} project={selectedProject} />
+      )}
     </div>
   );
 };
