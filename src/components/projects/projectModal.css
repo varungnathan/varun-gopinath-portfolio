@@ -14,7 +14,7 @@
   }
   
   .project__modal-content {
-    background-color: var(--container-color);
+    background-color: white;
     padding: 2rem;
     border-radius: 1rem;
     text-align: center;
