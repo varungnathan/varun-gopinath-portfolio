@@ -3,8 +3,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 import project1IconData from '../../components/animation/working1.json';
-import project2IconData from '../../components/animation/Profile.json';
-import project3IconData from '../../components/animation/Hobby.json';
+import project2IconData from '../../components/animation/working1.json';
+import project3IconData from '../../components/animation/working1.json';
 import ProjectModal from './ProjectModal';
 
 const ProjectDetails = () => {
@@ -17,7 +17,7 @@ const ProjectDetails = () => {
   const projects = [
     {
       title: 'PlanEat',
-      subtitle: 'A meal planning and grocery management platform for families.',
+      subtitle: 'A meal planning and grocery management platform for families. Simplifies meal planning with personalized recipes and automated grocery tracking.',
       technologies: [
         { name: 'React.js', icon: 'https://img.icons8.com/color/48/000000/react-native.png' },
         { name: 'Bootstrap', icon: 'https://img.icons8.com/color/48/000000/bootstrap.png' },
@@ -30,14 +30,21 @@ const ProjectDetails = () => {
       link: 'https://planeat-capstone.netlify.app/',
     },
     {
-      title: 'Project 2',
-      subtitle: 'Description of Project 2',
-      technologies: [],
-      link: '#',
+      title: 'AttendX',
+      subtitle: 'Automates attendance marking using face recognition and video processing. Enhances classroom monitoring and prevents proxy attendance.',
+      technologies: [
+        { name: 'Python', icon: 'https://img.icons8.com/color/48/000000/python.png' },
+        { name: 'C++', icon: 'https://img.icons8.com/color/48/000000/c-plus-plus-logo.png' },
+        { name: 'Java', icon: 'https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png' },
+        { name: 'OpenCV', icon: 'https://img.icons8.com/color/48/000000/opencv.png' },
+        { name: 'MySQL', icon: 'https://img.icons8.com/color/48/000000/mysql-logo.png' },
+        { name: 'Tkinter', icon: 'https://img.icons8.com/color/48/000000/tkinter.png' },
+      ],
+      link: 'https://www.ijert.org/automated-attendance-system-based-on-face-recognition-live-video-processing',
     },
     {
       title: 'Project 3',
-      subtitle: 'Description of Project 3',
+      subtitle: 'Description of Project 3. Provides innovative solutions to real-world problems using advanced technologies.',
       technologies: [],
       link: '#',
     },

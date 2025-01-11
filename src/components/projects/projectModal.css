@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     z-index: var(--z-modal);
+    overflow: auto; /* Allow scrolling if content is too large */
   }
   
   .project__modal-content {
@@ -19,6 +20,9 @@
     border-radius: 1rem;
     text-align: center;
     position: relative;
+    max-width: 90%; /* Limit the width of the modal */
+    max-height: 90%; /* Limit the height of the modal */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
   }
   
   .project__modal-close {
