@@ -38,7 +38,6 @@ const ProjectDetails = () => {
         { name: 'Java', icon: 'https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png' },
         { name: 'OpenCV', icon: 'https://img.icons8.com/color/48/000000/opencv.png' },
         { name: 'MySQL', icon: 'https://img.icons8.com/color/48/000000/mysql-logo.png' },
-        { name: 'Tkinter', icon: 'https://img.icons8.com/color/48/000000/tkinter.png' },
       ],
       link: 'https://www.ijert.org/automated-attendance-system-based-on-face-recognition-live-video-processing',
     },
