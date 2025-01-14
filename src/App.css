@@ -210,9 +210,35 @@ img {
   .section__subtitle {
     margin-bottom: var(--mb-3);
   }
+
+  .grid {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .grid img {
+    width: 100%; /* Make images responsive */
+    max-width: 100%; /* Prevent them from exceeding their container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: var(--mb-1); /* Add spacing below images */
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .container {
+    padding: 0 var(--mb-1); /* Add padding for smaller screens */
+  }
+
+  .section {
+    padding: 2rem 0; /* Adjust padding */
+  }
+
+  .grid img {
+    max-width: 100%; /* Ensure full responsiveness */
+    height: auto;
+    margin-bottom: var(--mb-0-5); /* Smaller spacing below images */
+  }
 }
 
 /* For small devices */
@@ -224,5 +250,12 @@ img {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+
+  .grid img {
+    width: 100%; /* Full width */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: var(--mb-0-5); /* Adjust spacing */
   }
 }
