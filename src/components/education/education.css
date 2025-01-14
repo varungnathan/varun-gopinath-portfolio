@@ -190,6 +190,35 @@
   .education__details {
     width: 100%;
   }
+
+  .education__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--container-color, #E0E0C0); /* Ensure background color is consistent */
+    padding: 2rem;
+  }
+
+  .education__bar {
+    display: none; /* Make the education__bar invisible in mobile view */
+  }
+
+  .education__degree,
+  .education__institution,
+  .education__date,
+  .education__gpa {
+    font-size: 1rem; /* Adjust font size for better readability on smaller screens */
+    text-align: center;
+    margin-bottom: 1rem; /* Add margin to separate stacked elements */
+  }
+
+  .education__divider {
+    display: none; /* Hide the divider in mobile view */
+  }
+
+  .education__animation {
+    animation: none; /* Disable animations in mobile view */
+  }
 }
 
 @media (max-width: 576px) {
