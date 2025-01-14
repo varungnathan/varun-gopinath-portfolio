@@ -3,7 +3,7 @@
 This is the source code for my personal portfolio website.
 
 ## Preview
-![Preview Image](src/assets/preview.png)
+[![Preview Image](src/assets/preview.png)](https://varungnath.netlify.app/)
 
 ## Project Details
 
