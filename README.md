@@ -2,6 +2,9 @@
 
 This is the source code for my personal portfolio website.
 
+## Preview
+![Preview Image](src/assets/preview.png)
+
 ## Project Details
 
 This portfolio showcases my skills, projects, and experience as a Full Stack Web/Mobile Developer. It includes sections such as About Me, Skills, Education, Projects, and Contact.
