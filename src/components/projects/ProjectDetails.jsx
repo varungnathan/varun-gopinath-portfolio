@@ -3,8 +3,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 import project1IconData from '../../components/animation/working1.json';
-import project2IconData from '../../components/animation/working1.json';
-import project3IconData from '../../components/animation/working1.json';
+import project2IconData from '../../components/animation/Like copy.json';
+import project3IconData from '../../components/animation/Like copy 2.json';
 import ProjectModal from './ProjectModal';
 
 const ProjectDetails = () => {
