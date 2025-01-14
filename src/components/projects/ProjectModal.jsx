@@ -60,10 +60,22 @@ const ProjectModal = ({ show, onClose, project }) => {
               <p><strong>Future Scopes:</strong> Integration with IoT devices, enhanced accuracy, and deployment in various domains.</p>
             </>
           )}
-          {project.title === 'Project 3' && (
+          {project.title === 'FarmTec' && (
             <>
-              <p>Description of Project 3</p>
-              {/* Add more details about Project 3 here */}
+              <p>
+                FarmTec is a smart farming application that emphasizes the use of information and communication technology in the cyber-physical farm management cycle. It leverages new technologies such as the Internet of Things and Cloud Computing to introduce more robots and artificial intelligence in farming.
+              </p>
+              <p>
+                The application aims to provide predictive insights in farming operations, drive real-time operational decisions, and redesign business processes for game-changing business models. It influences the entire food supply chain, enhancing productivity and efficiency.
+              </p>
+              <p><strong>Technologies Used:</strong></p>
+              <ul>
+                <li>IoT</li>
+                <li>Cloud Computing</li>
+                <li>Big Data</li>
+                <li>GPS</li>
+                <li>GIS</li>
+              </ul>
             </>
           )}
           <p><strong>Technologies Used:</strong></p>
@@ -75,9 +87,11 @@ const ProjectModal = ({ show, onClose, project }) => {
               </div>
             ))}
           </div>
-          <a href={project.title === 'Automated Attendance System Based on Face Recognition & Live Video Processing' ? 'https://www.ijert.org/research/automated-attendance-system-based-on-face-recognition-live-video-processing-IJERTCONV9IS07001.pdf' : project.link} target="_blank" rel="noopener noreferrer" className="button--flex project__visit-button">
-            Visit Website
-          </a>
+          {project.title !== 'FarmTec' && (
+            <a href={project.title === 'Automated Attendance System Based on Face Recognition & Live Video Processing' ? 'https://www.ijert.org/research/automated-attendance-system-based-on-face-recognition-live-video-processing-IJERTCONV9IS07001.pdf' : project.link} target="_blank" rel="noopener noreferrer" className="button--flex project__visit-button">
+              Visit Website
+            </a>
+          )}
         </div>
       </div>
     </div>

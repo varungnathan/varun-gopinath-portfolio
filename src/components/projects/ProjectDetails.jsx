@@ -1,10 +1,8 @@
-// src/components/projects/ProjectDetails.jsx
-
 import React, { useState, useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 import project1IconData from '../../components/animation/working1.json';
-import project2IconData from '../../components/animation/Like copy.json';
-import project3IconData from '../../components/animation/Like copy 2.json';
+import project2IconData from '../../components/animation/working1 copy.json';
+import project3IconData from '../../components/animation/Like copy.json'; 
 import ProjectModal from './ProjectModal';
 
 const ProjectDetails = () => {
@@ -12,7 +10,7 @@ const ProjectDetails = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const project1Ref = useRef(null);
   const project2Ref = useRef(null);
-  const project3Ref = useRef(null);
+  const project3Ref = useRef(null); 
 
   const projects = [
     {
@@ -42,10 +40,16 @@ const ProjectDetails = () => {
       link: 'https://www.ijert.org/automated-attendance-system-based-on-face-recognition-live-video-processing',
     },
     {
-      title: 'Project 3',
-      subtitle: 'Description of Project 3. Provides innovative solutions to real-world problems using advanced technologies.',
-      technologies: [],
-      link: '#',
+      title: 'FarmTec',
+      subtitle: 'A smart farming application leveraging IoT and Cloud Computing to enhance farm management and productivity.',
+      technologies: [
+        { name: 'IoT' },
+        { name: 'Cloud Computing' },
+        { name: 'Big Data' },
+        { name: 'GPS' },
+        { name: 'GIS' },
+      ],
+      link: '',
     },
   ];
 
@@ -95,7 +99,16 @@ const ProjectDetails = () => {
     <div className="projects__info grid">
       {projects.map((project, index) => (
         <div key={index} className="project__box">
-          <div ref={index === 0 ? project1Ref : index === 1 ? project2Ref : project3Ref} className="project__icon"></div>
+          <div
+            ref={
+              index === 0
+                ? project1Ref
+                : index === 1
+                ? project3Ref // AttendX Lottie animation
+                : project2Ref
+            }
+            className="project__icon"
+          ></div>
           <h3 className="project__title">{project.title}</h3>
           <span className="project__subtitle">{project.subtitle}</span>
           <button className="button--flex project__more-button" onClick={() => handleShowModal(project)}>
