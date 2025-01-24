@@ -1,7 +1,7 @@
 // src\components\skills\Skills.jsx
 
 import React, { useEffect } from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPhp, FaPython, FaAndroid, FaCloud } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPhp, FaPython, FaAndroid, FaCloud, FaJava, FaCode } from 'react-icons/fa';
 import { SiFirebase, SiMongodb, SiMysql } from 'react-icons/si';
 import './skills.css';
 
@@ -39,6 +39,14 @@ const Skills = () => {
       skills: [
         { name: 'AWS', level: 70, icon: <FaCloud className="skill-icon" color="#FF9900" /> },
         { name: 'Firebase', level: 90, icon: <SiFirebase className="skill-icon" color="#FFCA28" /> },
+      ],
+    },
+    {
+      title: 'Programming Languages',
+      skills: [
+        { name: 'Java', level: 85, icon: <FaJava className="skill-icon" color="#007396" /> },
+        { name: 'C++', level: 75, icon: <FaCode className="skill-icon" color="#00599C" /> },
+        { name: 'C#', level: 80, icon: <FaCode className="skill-icon" color="#68217A" /> },
       ],
     },
   ];
