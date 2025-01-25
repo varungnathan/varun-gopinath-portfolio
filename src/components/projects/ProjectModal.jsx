@@ -78,7 +78,9 @@ const ProjectModal = ({ show, onClose, project }) => {
               </ul>
             </>
           )}
-          <p><strong>Technologies Used:</strong></p>
+          {project.title !== 'FarmTec' && (
+            <p><strong>Technologies Used:</strong></p>
+          )}
           <div className="project__technologies">
             {project.technologies.map((tech, index) => (
               <div key={index} className="project__technology">
