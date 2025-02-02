@@ -23,7 +23,6 @@ nav {
     font-size: 1.1rem;
 }
 
-.nav__logo,
 .nav__toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
