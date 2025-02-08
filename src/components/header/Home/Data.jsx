@@ -1,12 +1,19 @@
 // src\components\header\Home\Data.jsx
 
 import React from 'react';
+import Typical from 'react-typical';
 
 const Data = () => {
   return (
     <div className="home__data">
         <h1 className="home__title">Varun Gopinath</h1>
-        <h3 className="home__subtitle">Full Stack Web/ Mobile Developer</h3>
+        <h3 className="home__subtitle">
+          <Typical
+            steps={['Full Stack Web Developer', 2000, 'Mobile Developer', 2000]}
+            loop={Infinity}
+            wrapper="span"
+          />
+        </h3>
         <p className="home__description">
           Recent Web Development graduate with a strong foundation in frontend and backend technologies. Proficient in HTML, CSS, JavaScript, and React for web development, and experienced with PHP, Node.js, Python, and SQL for backend. Passionate about mobile development using Kotlin and React Native.
         </p>
