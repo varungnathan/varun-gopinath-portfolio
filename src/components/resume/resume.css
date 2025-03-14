@@ -1,5 +1,7 @@
 /* src\components\resume\resume.css */
 
+/* src\components\resume\resume.css */
+
 .resume__modal {
     position: fixed;
     top: 0;
@@ -35,24 +37,6 @@
     color: #333; /* Dark color for close button */
   }
   
-  .resume__title {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
-  }
-  
-  .resume__subtitle {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #666;
-  }
-  
-  .resume__container {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
   .resume__header {
     margin-bottom: 2rem;
   }
@@ -63,14 +47,21 @@
   }
   
   .resume__contact {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     color: #666;
   }
   
+  .resume__role-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
   .resume__role {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 0; /* Remove default margin */
   }
   
   .resume__summary {
@@ -114,4 +105,31 @@
   .resume__publication-details {
     font-size: 0.9rem;
     color: #666;
+  }
+  
+  /* Download Button Styles */
+  .resume__download-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--title-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume__download-button:hover {
+    background-color: #333; /* Darker shade on hover */
+  }
+  
+  .resume__download-icon {
+    margin-right: 0.5rem;
+  }
+  
+  /* Bottom Download Button */
+  .resume__download {
+    text-align: center;
+    margin: 1.5rem 0;
   }
