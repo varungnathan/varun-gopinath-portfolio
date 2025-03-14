@@ -106,7 +106,7 @@ const Resume = ({ show, onClose }) => {
           <div className="resume__education">
             <h4 className="resume__education-title">Conestoga College, Kitchener, Canada</h4>
             <p className="resume__education-details">
-              Post Graduate Diploma in Web Development (GPA: 3.31), Sep 2023 - Dec 2024
+              Ontario College Graduate Certificate in Web Development (GPA: 3.31), Sep 2023 - Dec 2024
             </p>
             <h4 className="resume__education-title">Mangalam College of Engineering, Kottayam, India</h4>
             <p className="resume__education-details">
