@@ -3,7 +3,7 @@
 import React from "react";
 import "./resume.css";
 import cv from "../../assets/cv.pdf";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaExternalLinkAlt } from "react-icons/fa";
 
 const Resume = ({ show, onClose }) => {
   if (!show) return null;
@@ -118,7 +118,12 @@ const Resume = ({ show, onClose }) => {
         <div className="resume__section">
           <h3 className="resume__section-title">Projects</h3>
           <div className="resume__project">
-            <h4 className="resume__project-title">PlanEat</h4>
+            <div className="resume__project-header">
+              <h4 className="resume__project-title">PlanEat</h4>
+              <a href="https://planeat-capstone.netlify.app/" target="_blank" rel="noopener noreferrer" className="resume__project-link">
+                <FaExternalLinkAlt className="resume__link-icon" />
+              </a>
+            </div>
             <p className="resume__project-duration">Aug 2024 - Dec 2024</p>
             <ul className="resume__project-list">
               <li>
@@ -228,32 +233,38 @@ const Resume = ({ show, onClose }) => {
         </div>
 
         <div className="resume__section">
-          <h3 className="resume__section-title">Publications</h3>
-          <div className="resume__publication">
-            <h4 className="resume__publication-title">
-              Automated Attendance System Based on Face Recognition & Live Video Processing
-            </h4>
-            <p className="resume__publication-details">
+  <h3 className="resume__section-title">Publications</h3>
+  <div className="resume__publication">
+    <div className="resume__publication-header">
+      <h4 className="resume__publication-title">
+        Automated Attendance System Based on Face Recognition & Live Video Processing
+      </h4>
+      <a href="https://www.ijert.org/automated-attendance-system-based-on-face-recognition-live-video-processing" target="_blank" rel="noopener noreferrer" className="resume__publication-link">
+        <FaExternalLinkAlt className="resume__link-icon" />
+      </a>
+    </div>
+
+    <ul className="resume__publication-list">
+    <p className="resume__publication-details">
               Published in IJERT - ICCIDT, Jun 2021. Technologies: Python, OpenCV, Haar Cascade, Fisher Linear
               Discriminant Analysis (LDA), Principal Component Analysis (PCA).
             </p>
-            <p className="resume__publication-description">
-              Developed and published a research paper on an Automated Attendance System that utilizes face recognition
-              and live video processing for efficient and real-time attendance tracking. The paper, published in the
-              International Journal of Engineering Research & Technology (IJERT), demonstrated the system’s 85%+
-              accuracy and its real-time capabilities in detecting and marking attendance.
-            </p>
-            <p className="resume__publication-description">
-              The paper received appreciation from the IJERT team and industry professionals for its innovative approach
-              and practical use of face recognition in educational attendance systems.
-            </p>
-            <p className="resume__publication-description">
-              Successfully demonstrated the project at the final presentation, earning congratulations from faculty and
-              officials for its potential to automate and improve traditional attendance methods in educational
-              institutions.
-            </p>
-          </div>
-        </div>
+    &nbsp;
+      <li className="resume__publication-details">
+        <strong>Technologies:</strong> Python, OpenCV, Haar Cascade, Fisher Linear Discriminant Analysis (LDA), Principal Component Analysis (PCA).
+      </li>
+      <li className="resume__publication-description">
+        Developed and published a research paper on an Automated Attendance System that utilizes face recognition and live video processing for efficient and real-time attendance tracking. The paper, published in the International Journal of Engineering Research & Technology (IJERT), demonstrated the system’s 85%+ accuracy and its real-time capabilities in detecting and marking attendance.
+      </li>
+      <li className="resume__publication-description">
+        The paper received appreciation from the IJERT team and industry professionals for its innovative approach and practical use of face recognition in educational attendance systems.
+      </li>
+      <li className="resume__publication-description">
+        Successfully demonstrated the project at the final presentation, earning congratulations from faculty and officials for its potential to automate and improve traditional attendance methods in educational institutions.
+      </li>
+    </ul>
+  </div>
+</div>
 
         <div className="resume__download">
           <a href={cv} download="Varun_Gopinath_Resume.pdf" className="resume__download-button">

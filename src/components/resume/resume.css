@@ -129,3 +129,46 @@
     text-align: center;
     margin: 1.5rem 0;
 }
+
+/* New Styles for Project and Publication Links */
+.resume__project-header,
+.resume__publication-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.resume__project-link,
+.resume__publication-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--title-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.resume__project-link:hover,
+.resume__publication-link:hover {
+    color: #333;
+}
+
+.resume__link-icon {
+    margin-left: 0.5rem;
+}
+
+.resume__publication-list {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+  }
+  
+  .resume__publication-list li {
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .resume__publication-details strong {
+    color: #333;
+  }
