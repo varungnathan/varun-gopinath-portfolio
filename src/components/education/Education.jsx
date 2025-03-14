@@ -57,7 +57,8 @@ const Education = () => {
           </div>
         </div>
 
-        <div className="education__bar"></div>
+        {/* Horizontal Divider for Mobile View */}
+        <div className="education__divider"></div>
 
         <div className="education__item education__item-undergrad" ref={undergradRef}>
           <div className="education__container">

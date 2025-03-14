@@ -26,159 +26,63 @@
   gap: 2rem;
 }
 
+/* Gradient Effect and Animated Flow for the Timeline Bar */
 .education__bar {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 50%;
-  width: 4px; /* Increased width */
-  background-color: #59a1ce;
-  border-right: 4px solid #adcbde; /* Increased border width */
-  transition: background-color 0.5s ease, border-color 0.5s ease; /* Added smoother transition */
+  width: 4px;
+  background: linear-gradient(to bottom, #33A8F1, #0056b3);
+  border-right: 4px solid #adcbde;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+  animation: progress 2s ease-in-out;
 }
 
-@keyframes wipeInLeft {
+@keyframes progress {
+  0% { height: 0; }
+  100% { height: 100%; }
+}
+
+/* Education Icons */
+.education__icon {
+  font-size: 1.5rem;
+  color: #33A8F1;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Updated Education Details to Include Icons */
+.education__degree, 
+.education__institution, 
+.education__date, 
+.education__gpa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Animated Entry Effect for a Smoother Appearance */
+@keyframes fadeInUp {
   from {
-    transform: translateX(-100%);
+    transform: translateY(50px);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
-}
-
-@keyframes wipeInRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes blink-cursor {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #012439;
-  }
-}
-
-.education__item {
-  opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.education__item-postgrad {
-  transform: translateX(-100%);
-}
-
-.education__item-undergrad {
-  transform: translateX(100%);
 }
 
 .education__item-visible {
-  opacity: 1;
-  transform: translateX(0);
+  animation: fadeInUp 1s ease-out;
 }
 
-.education__item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-  max-width: 400px;
-  padding: 1rem 0; /* Added padding to ensure equal spacing */
-}
-
-.education__circle {
-  display: none;
-  width: 12px;
-  height: 12px;
-  background-color: var(--title-color);
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-}
-
-.education__circle.right {
-  right: -7px;
-  background-color: #33A8F1; /* New color for right circle */
-}
-
-.education__circle.left {
-  left: -7px;
-  background-color: #66BDF4; /* New color for left circle */
-}
-
-.education__circle-postgrad {
-  background-color: red;
-}
-
-.education__circle-undergrad {
-  background-color: blue;
-}
-
-.education__item-postgrad .education__circle {
-  background-color: #666;
-}
-
-.education__item-undergrad .education__circle {
-  background-color: #666;
-}
-
-.education__details {
-  margin-left: 20px;
-  font-size: 0.95rem;
-  width: 100%;
-  max-width: 300px;
-}
-
-.education__degree {
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.education__institution {
-  font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
-  color: #666;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-.education__date {
-  font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
-  font-weight: 500;
-  color: #444;
-  text-align: center;
-}
-
-.education__gpa {
-  font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
-  font-weight: 500;
-  color: #444;
-  text-align: center;
-}
-
-.education__container {
-  background-color: var(--container-color, #E0E0C0); /* Changed to use --container-color */
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: max-content;
-  margin: 0 auto; /* Center the container */
-}
-
+/* Mobile View Adjustments */
 @media (max-width: 768px) {
   .education__timeline {
     flex-direction: column;
@@ -187,46 +91,21 @@
     padding: 3rem 20px;
   }
 
-  .education__details {
-    width: 100%;
-  }
-
-  .education__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: var(--container-color, #E0E0C0); Ensure background color is consistent */
-    padding: 2rem;
-  }
-
   .education__bar {
-    display: none; /* Make the education__bar invisible in mobile view */
+    display: none;
   }
 
-  .education__degree,
-  .education__institution,
-  .education__date,
-  .education__gpa {
-    font-size: 1rem; /* Adjust font size for better readability on smaller screens */
-    text-align: center;
-    margin-bottom: 1rem; /* Add margin to separate stacked elements */
-  }
-
+  /* Horizontal Divider for Mobile View */
   .education__divider {
-    display: none; /* Hide the divider in mobile view */
-  }
-
-  .education__animation {
-    animation: none; /* Disable animations in mobile view */
+    width: 80%;
+    height: 2px;
+    background-color: #33A8F1;
+    margin: 1.5rem 0;
   }
 }
 
 @media (max-width: 576px) {
   .section__title {
     font-size: 1.8rem;
-  }
-
-  .education__degree {
-    font-size: 1.2rem;
   }
 }
