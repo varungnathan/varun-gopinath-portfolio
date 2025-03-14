@@ -1,114 +1,111 @@
 /* src\components\resume\resume.css */
 
-/* src\components\resume\resume.css */
-
 .resume__modal {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: var(--z-modal); /* Ensure it's above other content */
-    font-family: 'EB Garamond', serif; /* Use EB Garamond font */
-  }
-  
-  .resume__modal-content {
-    background-color: white; /* White background */
+    z-index: var(--z-modal);
+    font-family: 'EB Garamond', serif;
+}
+
+.resume__modal-content {
+    background-color: white;
     padding: 2rem;
     border-radius: 1rem;
     width: 90%;
     max-width: 800px;
     max-height: 90vh;
-    overflow-y: auto; /* Enable scrolling for long content */
+    overflow-y: auto;
     position: relative;
-    color: #333; /* Dark text for contrast */
-  }
-  
-  .resume__modal-close {
+    color: #333;
+}
+
+.resume__modal-close {
     position: absolute;
     top: 1rem;
     right: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #333; /* Dark color for close button */
-  }
-  
-  .resume__header {
+    color: #333;
+}
+
+.resume__header {
     margin-bottom: 2rem;
-  }
-  
-  .resume__name {
+}
+
+.resume__name {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
-  }
-  
-  .resume__contact {
+}
+
+.resume__contact {
     font-size: 1rem;
     margin-bottom: 1rem;
     color: #666;
-  }
-  
-  .resume__role-container {
+}
+
+.resume__role-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-  }
-  
-  .resume__role {
+}
+
+.resume__role {
     font-size: 1.5rem;
-    margin: 0; /* Remove default margin */
-  }
-  
-  .resume__summary {
+    margin: 0;
+}
+
+.resume__summary {
     font-size: 0.9rem;
     color: #666;
-  }
-  
-  .resume__section {
+}
+
+.resume__section {
     margin-bottom: 2rem;
-  }
-  
-  .resume__section-title {
+}
+
+.resume__section-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
-  }
-  
-  .resume__experience-title,
-  .resume__education-title,
-  .resume__project-title,
-  .resume__publication-title {
+}
+
+.resume__experience-title,
+.resume__education-title,
+.resume__project-title,
+.resume__publication-title {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-  }
-  
-  .resume__experience-list,
-  .resume__project-list,
-  .resume__competencies-list {
+}
+
+.resume__experience-list,
+.resume__project-list,
+.resume__competencies-list {
     list-style-type: disc;
     margin-left: 1.5rem;
-  }
-  
-  .resume__experience-list li,
-  .resume__project-list li,
-  .resume__competencies-list li {
+}
+
+.resume__experience-list li,
+.resume__project-list li,
+.resume__competencies-list li {
     margin-bottom: 0.5rem;
-  }
-  
-  .resume__education-details,
-  .resume__publication-details {
+}
+
+.resume__education-details,
+.resume__publication-details {
     font-size: 0.9rem;
     color: #666;
-  }
-  
-  /* Download Button Styles */
-  .resume__download-button {
+}
+
+.resume__download-button {
     display: inline-flex;
     align-items: center;
     background-color: var(--title-color);
@@ -118,18 +115,17 @@
     text-decoration: none;
     font-size: 0.9rem;
     transition: background-color 0.3s ease;
-  }
-  
-  .resume__download-button:hover {
-    background-color: #333; /* Darker shade on hover */
-  }
-  
-  .resume__download-icon {
+}
+
+.resume__download-button:hover {
+    background-color: #333;
+}
+
+.resume__download-icon {
     margin-right: 0.5rem;
-  }
-  
-  /* Bottom Download Button */
-  .resume__download {
+}
+
+.resume__download {
     text-align: center;
     margin: 1.5rem 0;
-  }
+}
