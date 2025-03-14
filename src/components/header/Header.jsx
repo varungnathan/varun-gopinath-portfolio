@@ -1,14 +1,18 @@
 // src\components\header\Header.jsx
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './header.css';
 import Contact from '../contact/Contact';
+import Resume from '../resume/Resume'; // Import the Resume component
 
 const Header = () => {
   const [Toggle, showMenu] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const [showResume, setShowResume] = useState(false); // State for Resume modal
 
-  const handleContactClick = () => {
+  const handleContactClick = (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
     setShowContact(true);
   };
 
@@ -16,16 +20,25 @@ const Header = () => {
     setShowContact(false);
   };
 
+  const handleResumeClick = (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    setShowResume(true); // Open Resume modal
+  };
+
+  const handleCloseResume = () => {
+    setShowResume(false); // Close Resume modal
+  };
+
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="index.html" className="nav__logo">Varun Gopinath</a>
+        <Link to="/" className="nav__logo">Varun Gopinath</Link> {/* Use Link for the logo */}
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
-              <a href="#home" className="nav__link active-link">
+              <Link to="/" className="nav__link active-link">
                 <i className="uil uil-estate nav__icon"></i> Home
-              </a>
+              </Link>
             </li>
 
             <li className="nav__item">
@@ -52,6 +65,13 @@ const Header = () => {
               </a>
             </li>
 
+            {/* Resume Link */}
+            <li className="nav__item">
+              <a href="#resume" className="nav__link" onClick={handleResumeClick}>
+                <i className="uil uil-file-alt nav__icon"></i> Resume
+              </a>
+            </li>
+
             <li className="nav__item">
               <a href="#contact" className="nav__link" onClick={handleContactClick}>
                 <i className="uil uil-message nav__icon"></i> Contact
@@ -66,7 +86,11 @@ const Header = () => {
         </div>
       </nav>
 
+      {/* Contact Modal */}
       <Contact show={showContact} onClose={handleCloseContact} />
+
+      {/* Resume Modal */}
+      <Resume show={showResume} onClose={handleCloseResume} />
     </header>
   );
 };

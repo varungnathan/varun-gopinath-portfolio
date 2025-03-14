@@ -1,2 +1,117 @@
 /* src\components\resume\resume.css */
 
+.resume__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: var(--z-modal); /* Ensure it's above other content */
+    font-family: 'EB Garamond', serif; /* Use EB Garamond font */
+  }
+  
+  .resume__modal-content {
+    background-color: white; /* White background */
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto; /* Enable scrolling for long content */
+    position: relative;
+    color: #333; /* Dark text for contrast */
+  }
+  
+  .resume__modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333; /* Dark color for close button */
+  }
+  
+  .resume__title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .resume__subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  .resume__container {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .resume__header {
+    margin-bottom: 2rem;
+  }
+  
+  .resume__name {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume__contact {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .resume__role {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .resume__summary {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .resume__section {
+    margin-bottom: 2rem;
+  }
+  
+  .resume__section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+  }
+  
+  .resume__experience-title,
+  .resume__education-title,
+  .resume__project-title,
+  .resume__publication-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume__experience-list,
+  .resume__project-list,
+  .resume__competencies-list {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+  }
+  
+  .resume__experience-list li,
+  .resume__project-list li,
+  .resume__competencies-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume__education-details,
+  .resume__publication-details {
+    font-size: 0.9rem;
+    color: #666;
+  }
