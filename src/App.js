@@ -1,27 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// src\App.js
+
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import routing components
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/header/Home/Home';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import Education from './components/education/Education';
-import Projects from './components/projects/Projects';
-import Resume from './components/resume/Resume';
+import Projects from './components/projects/Projects'; // Import Projects component
+import Resume from './components/resume/Resume'; // Import Resume component
 import Contact from './components/contact/Contact';
-import WelcomePage from './components/WelcomePage/WelcomePage';
+// import Paper from './components/paper/Paper';
 
 const App = () => {
-  const [showWelcome, setShowWelcome] = useState(true);
-  const [fadeIn, setFadeIn] = useState(false);
-
   useEffect(() => {
+    // Add smooth scrolling only on the Home page
     if (window.location.pathname === '/') {
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault();
-          const targetId = this.getAttribute('href');
-          const targetElement = document.querySelector(targetId);
+
+          const targetId = this.getAttribute('href'); // Get the target ID (e.g., "#about")
+          const targetElement = document.querySelector(targetId); // Find the target element
+
           if (targetElement) {
             targetElement.scrollIntoView({
               behavior: 'smooth',
@@ -32,36 +34,28 @@ const App = () => {
     }
   }, []);
 
-  const handleWelcomeComplete = () => {
-    setShowWelcome(false);
-    setTimeout(() => setFadeIn(true), 100); // Slight delay for smoother transition
-  };
-
   return (
     <Router>
-      {showWelcome ? (
-        <WelcomePage onWelcomeComplete={handleWelcomeComplete} />
-      ) : (
-        <div className={`main-content ${fadeIn ? 'fade-in' : ''}`}>
-          <Header />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <main className="main">
-                  <Home />
-                  <About />
-                  <Skills />
-                  <Education />
-                  <Projects />
-                  <Contact />
-                </main>
-              }
-            />
-            <Route path="/resume" element={<Resume />} />
-          </Routes>
-        </div>
-      )}
+      <Header />
+      <Routes>
+        {/* Home Page Route */}
+        <Route
+          path="/"
+          element={
+            <main className="main">
+              <Home />
+              <About />
+              <Skills />
+              <Education />
+              <Projects />
+              <Contact />
+            </main>
+          }
+        />
+
+        {/* Resume Page Route */}
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
     </Router>
   );
 };
