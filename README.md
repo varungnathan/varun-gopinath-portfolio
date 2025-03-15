@@ -2,7 +2,7 @@
 
 This is the source code for my personal portfolio website.
 
-[![Preview Image](src/assets/preview.png)](https://varungnath.netlify.app/)
+[![Preview Image](src/assets/image.png)](https://varungnath.netlify.app/)
 
 ## Project Details
 
