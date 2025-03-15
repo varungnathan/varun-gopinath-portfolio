@@ -1,6 +1,5 @@
 // src\components\resume\Resume.jsx
 
-// src\components\resume\Resume.jsx
 
 import React from "react";
 import "./resume.css";
@@ -34,10 +33,10 @@ const Resume = ({ show, onClose }) => {
             </a>
           </div>
           <p className="resume__summary">
-            Passionate Full-Stack Developer with expertise in HTML, CSS, JavaScript, React.js, Node.js, Express.js,
-            MongoDB, WordPress, and SEO. Experienced in building responsive web applications, optimizing user
+            Passionate Full-Stack Developer with expertise in <strong>HTML, CSS, JavaScript, React.js, Node.js, Express.js,
+            MongoDB, WordPress, and SEO.</strong> Experienced in building responsive web applications, optimizing user
             experiences, and managing content with a strong focus on performance, accessibility, and scalability.
-            Skilled in frontend and backend development, API integration, database management, and cloud deployment.
+            <strong>Skilled in frontend and backend development, API integration, database management, and cloud deployment.</strong>
             Adept at collaborating with cross-functional teams, ensuring high-quality web solutions that align with
             business goals. Excited to leverage technical expertise to develop innovative, user-friendly, and efficient
             web applications.
@@ -247,23 +246,18 @@ const Resume = ({ show, onClose }) => {
             </div>
 
             <ul className="resume__publication-list">
-              <p className="resume__publication-details">
-                Published in IJERT - ICCIDT, Jun 2021. Technologies: Python, OpenCV, Haar Cascade, Fisher Linear
-                Discriminant Analysis (LDA), Principal Component Analysis (PCA).
-              </p>
-              &nbsp;
-              <li className="resume__publication-details">
-                <strong>Technologies:</strong> Python, OpenCV, Haar Cascade, Fisher Linear Discriminant Analysis (LDA), Principal Component Analysis (PCA).
-              </li>
-              <li className="resume__publication-description">
+            <li className="resume__publication-details" style={{ fontSize: '16px' }}>
+              <strong>Technologies:</strong> Python, OpenCV, Haar Cascade, Fisher Linear Discriminant Analysis (LDA), Principal Component Analysis (PCA).
+            </li>
+            <li className="resume__publication-description" style={{ fontSize: '16px' }}>
                 Developed and published a research paper on an Automated Attendance System that utilizes face recognition and live video processing for efficient and real-time attendance tracking. The paper, published in the International Journal of Engineering Research & Technology (IJERT), demonstrated the system’s 85%+ accuracy and its real-time capabilities in detecting and marking attendance.
-              </li>
-              <li className="resume__publication-description">
+            </li>
+            <li className="resume__publication-description" style={{ fontSize: '16px' }}>
                 The paper received appreciation from the IJERT team and industry professionals for its innovative approach and practical use of face recognition in educational attendance systems.
-              </li>
-              <li className="resume__publication-description">
+            </li>
+            <li className="resume__publication-description" style={{ fontSize: '16px' }}>
                 Successfully demonstrated the project at the final presentation, earning congratulations from faculty and officials for its potential to automate and improve traditional attendance methods in educational institutions.
-              </li>
+            </li>
             </ul>
           </div>
         </div>

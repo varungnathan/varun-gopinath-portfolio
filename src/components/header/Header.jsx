@@ -1,18 +1,18 @@
 // src\components\header\Header.jsx
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import './header.css';
 import Contact from '../contact/Contact';
-import Resume from '../resume/Resume'; // Import the Resume component
+import Resume from '../resume/Resume';
 
 const Header = () => {
   const [Toggle, showMenu] = useState(false);
   const [showContact, setShowContact] = useState(false);
-  const [showResume, setShowResume] = useState(false); // State for Resume modal
+  const [showResume, setShowResume] = useState(false);
 
   const handleContactClick = (e) => {
-    e.preventDefault(); // Prevent default anchor behavior
+    e.preventDefault();
     setShowContact(true);
   };
 
@@ -21,18 +21,22 @@ const Header = () => {
   };
 
   const handleResumeClick = (e) => {
-    e.preventDefault(); // Prevent default anchor behavior
-    setShowResume(true); // Open Resume modal
+    e.preventDefault();
+    setShowResume(true);
   };
 
   const handleCloseResume = () => {
-    setShowResume(false); // Close Resume modal
+    setShowResume(false);
+  };
+
+  const handleCloseMenu = () => {
+    showMenu(false);
   };
 
   return (
     <header className="header">
       <nav className="nav container">
-        <Link to="/" className="nav__logo">Varun Gopinath</Link> {/* Use Link for the logo */}
+        <Link to="/" className="nav__logo">Varun Gopinath</Link>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
@@ -49,36 +53,35 @@ const Header = () => {
 
             <li className="nav__item">
               <a href="#skills" className="nav__link">
-                <i className="uil uil-file-alt nav__icon"></i> Tech Stack
+                <i className="uil uil-code-branch nav__icon"></i> Tech Stack
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#education" className="nav__link">
-                <i className="uil uil-scenery nav__icon"></i> Education
+                <i className="uil uil-graduation-cap nav__icon"></i> Education
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#projects" className="nav__link">
-                <i className="uil uil-scenery nav__icon"></i> Projects
+                <i className="uil uil-folder nav__icon"></i> Projects
               </a>
             </li>
 
-            {/* Resume Link */}
             <li className="nav__item">
               <a href="#resume" className="nav__link" onClick={handleResumeClick}>
-                <i className="uil uil-file-alt nav__icon"></i> Resume
+                <i className="uil uil-file-download nav__icon"></i> Resume
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#contact" className="nav__link" onClick={handleContactClick}>
-                <i className="uil uil-message nav__icon"></i> Contact
+                <i className="uil uil-envelope nav__icon"></i> Contact
               </a>
             </li>
           </ul>
-          <i className="uil uil-times nav__close"></i>
+          <i className="uil uil-times nav__close" onClick={handleCloseMenu}></i>
         </div>
 
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
@@ -86,10 +89,7 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* Contact Modal */}
       <Contact show={showContact} onClose={handleCloseContact} />
-
-      {/* Resume Modal */}
       <Resume show={showResume} onClose={handleCloseResume} />
     </header>
   );
