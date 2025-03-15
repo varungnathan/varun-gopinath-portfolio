@@ -1,6 +1,6 @@
 // src\App.js
 
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
@@ -11,44 +11,43 @@ import Education from './components/education/Education';
 import Projects from './components/projects/Projects';
 import Resume from './components/resume/Resume';
 import Contact from './components/contact/Contact';
+import WelcomePage from './components/WelcomePage/WelcomePage';
 
 const App = () => {
+  const [showWelcome, setShowWelcome] = useState(true);
+  const [fadeInContent, setFadeInContent] = useState(false);
+
   useEffect(() => {
-    if (window.location.pathname === '/') {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href');
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            targetElement.scrollIntoView({
-              behavior: 'smooth',
-            });
-          }
-        });
-      });
+    if (!showWelcome) {
+      setTimeout(() => setFadeInContent(true), 100);
     }
-  }, []);
+  }, [showWelcome]);
 
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <main className="main">
-              <Home />
-              <About />
-              <Skills />
-              <Education />
-              <Projects />
-              <Contact />
-            </main>
-          }
-        />
-        <Route path="/resume" element={<Resume />} />
-      </Routes>
+      {showWelcome ? (
+        <WelcomePage onWelcomeComplete={() => setShowWelcome(false)} />
+      ) : (
+        <div className={`main-content ${fadeInContent ? 'fade-in' : ''}`}>
+          <Header />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <main className="main">
+                  <Home />
+                  <About />
+                  <Skills />
+                  <Education />
+                  <Projects />
+                  <Contact />
+                </main>
+              }
+            />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </div>
+      )}
     </Router>
   );
 };

@@ -106,13 +106,11 @@ h3 {
 
 .main-content {
   opacity: 0;
-  transform: translateY(20px); /* Slight upward movement for smoothness */
-  transition: opacity 1.2s ease-out, transform 1.2s ease-out; /* Longer duration and ease-out */
+  transition: opacity 1s ease-in-out;
 }
 
 .main-content.fade-in {
   opacity: 1;
-  transform: translateY(0); /* Move to original position */
 }
 
 ul {

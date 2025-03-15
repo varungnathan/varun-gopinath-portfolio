@@ -1,4 +1,4 @@
-// src\components\welcomepage\WelcomePage.jsx
+// src\components\WelcomePage\WelcomePage.jsx
 
 import React, { useEffect, useState } from 'react';
 import './welcomePage.css';
