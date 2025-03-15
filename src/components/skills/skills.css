@@ -11,7 +11,7 @@
 }
 
 .skills__content {
-  background-color: var(--container-color);
+  background-color: white;
   border: 1px solid var(--border-color);
   padding: 2rem 3rem;
   border-radius: 1.25rem;
@@ -59,7 +59,7 @@
 .skill__bar {
   flex: 1;
   height: 10px;
-  background-color: #e9ecef;
+  background-color: #ffffff;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
@@ -86,7 +86,7 @@
   margin-right: 10px;
 }
 
-@keyframes typing {
+/* @keyframes typing {
   from {
     width: 0;
   }
@@ -116,7 +116,7 @@
 .typing-effect.no-cursor {
   border-right: none;
   animation: typing 2s steps(30, end);
-}
+} */
 
 @media screen and (max-width: 992px) {
   .skills__container {
