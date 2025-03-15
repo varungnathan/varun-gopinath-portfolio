@@ -58,14 +58,14 @@ const Header = () => {
             </li>
 
             <li className="nav__item">
-              <a href="#education" className="nav__link">
-                <i className="uil uil-graduation-cap nav__icon"></i> Education
+              <a href="#projects" className="nav__link">
+                <i className="uil uil-folder nav__icon"></i> Projects
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="#projects" className="nav__link">
-                <i className="uil uil-folder nav__icon"></i> Projects
+              <a href="#education" className="nav__link">
+                <i className="uil uil-graduation-cap nav__icon"></i> Education
               </a>
             </li>
 
