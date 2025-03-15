@@ -2,13 +2,13 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import './education.css';
-import ConestogaCertificate from '../../assets/Degree Certificate_page-0001.jpg'; // Import Conestoga certificate
-import BTechCertificate from '../../assets/8929281 - parchment 2024_page-0001.jpg'; // Import BTech certificate
+import BTechCertificate from '../../assets/Degree Certificate_page-0001.jpg';
+import ConestogaCertificate from '../../assets/8929281 - parchment 2024_page-0001.jpg';
 
 const Education = () => {
   const postgradRef = useRef(null);
   const undergradRef = useRef(null);
-  const [modalImage, setModalImage] = useState(null); // State to manage modal image
+  const [modalImage, setModalImage] = useState(null);
 
   useEffect(() => {
     const postgradElement = postgradRef.current;
@@ -75,10 +75,8 @@ const Education = () => {
           </div>
         </div>
 
-        {/* Horizontal Divider for Mobile View */}
         <div className="education__divider"></div>
 
-        {/* Undergraduate Section */}
         <div className="education__item education__item-undergrad" ref={undergradRef}>
           <h3 className="education__heading">Undergraduate</h3>
           <div className="education__container">
@@ -87,7 +85,7 @@ const Education = () => {
               <h3 className="education__degree">Bachelor of Technology in Computer Science & Engineering</h3>
               <p className="education__institution">Kerala Technological University, Kerala, India</p>
               <p className="education__date">2017 - 2021</p>
-              <p className="education__gpa">Grade: 7.20 GPA</p>
+              <p className="education__gpa">Grade: 7.18 GPA</p>
               <button
                 className="education__button"
                 onClick={() => openModal(BTechCertificate)}
@@ -99,7 +97,6 @@ const Education = () => {
         </div>
       </div>
 
-      {/* Modal for Certificate */}
       {modalImage && (
         <div className="modal" onClick={closeModal}>
           <div className="modal__content">

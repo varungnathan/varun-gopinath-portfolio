@@ -80,7 +80,7 @@
 }
 
 .project__more-button:hover {
-  background-color: var(--button-hover-color);
+    background-color: #0056b3;
 }
 
 .project__details {

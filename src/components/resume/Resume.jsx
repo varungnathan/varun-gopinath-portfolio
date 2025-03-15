@@ -1,9 +1,11 @@
 // src\components\resume\Resume.jsx
 
+// src\components\resume\Resume.jsx
+
 import React from "react";
 import "./resume.css";
 import cv from "../../assets/cv.pdf";
-import { FaDownload, FaExternalLinkAlt } from "react-icons/fa";
+import { FaDownload, FaExternalLinkAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Resume = ({ show, onClose }) => {
   if (!show) return null;
@@ -18,11 +20,11 @@ const Resume = ({ show, onClose }) => {
           <p className="resume__contact">
             +1 (226)-868-3301 • varun.g.nath.official@gmail.com • Kitchener, ON, Canada •{" "}
             <a href="https://www.linkedin.com/in/varungnath/" target="_blank" rel="noopener noreferrer">
-              LinkedIn
+              <FaLinkedin className="resume__icon" />
             </a>{" "}
             •{" "}
             <a href="http://github.com/varungnathan/" target="_blank" rel="noopener noreferrer">
-              GitHub
+              <FaGithub className="resume__icon" />
             </a>
           </p>
           <div className="resume__role-container">
@@ -233,38 +235,38 @@ const Resume = ({ show, onClose }) => {
         </div>
 
         <div className="resume__section">
-  <h3 className="resume__section-title">Publications</h3>
-  <div className="resume__publication">
-    <div className="resume__publication-header">
-      <h4 className="resume__publication-title">
-        Automated Attendance System Based on Face Recognition & Live Video Processing
-      </h4>
-      <a href="https://www.ijert.org/automated-attendance-system-based-on-face-recognition-live-video-processing" target="_blank" rel="noopener noreferrer" className="resume__publication-link">
-        <FaExternalLinkAlt className="resume__link-icon" />
-      </a>
-    </div>
+          <h3 className="resume__section-title">Publications</h3>
+          <div className="resume__publication">
+            <div className="resume__publication-header">
+              <h4 className="resume__publication-title">
+                Automated Attendance System Based on Face Recognition & Live Video Processing
+              </h4>
+              <a href="https://www.ijert.org/automated-attendance-system-based-on-face-recognition-live-video-processing" target="_blank" rel="noopener noreferrer" className="resume__publication-link">
+                <FaExternalLinkAlt className="resume__link-icon" />
+              </a>
+            </div>
 
-    <ul className="resume__publication-list">
-    <p className="resume__publication-details">
-              Published in IJERT - ICCIDT, Jun 2021. Technologies: Python, OpenCV, Haar Cascade, Fisher Linear
-              Discriminant Analysis (LDA), Principal Component Analysis (PCA).
-            </p>
-    &nbsp;
-      <li className="resume__publication-details">
-        <strong>Technologies:</strong> Python, OpenCV, Haar Cascade, Fisher Linear Discriminant Analysis (LDA), Principal Component Analysis (PCA).
-      </li>
-      <li className="resume__publication-description">
-        Developed and published a research paper on an Automated Attendance System that utilizes face recognition and live video processing for efficient and real-time attendance tracking. The paper, published in the International Journal of Engineering Research & Technology (IJERT), demonstrated the system’s 85%+ accuracy and its real-time capabilities in detecting and marking attendance.
-      </li>
-      <li className="resume__publication-description">
-        The paper received appreciation from the IJERT team and industry professionals for its innovative approach and practical use of face recognition in educational attendance systems.
-      </li>
-      <li className="resume__publication-description">
-        Successfully demonstrated the project at the final presentation, earning congratulations from faculty and officials for its potential to automate and improve traditional attendance methods in educational institutions.
-      </li>
-    </ul>
-  </div>
-</div>
+            <ul className="resume__publication-list">
+              <p className="resume__publication-details">
+                Published in IJERT - ICCIDT, Jun 2021. Technologies: Python, OpenCV, Haar Cascade, Fisher Linear
+                Discriminant Analysis (LDA), Principal Component Analysis (PCA).
+              </p>
+              &nbsp;
+              <li className="resume__publication-details">
+                <strong>Technologies:</strong> Python, OpenCV, Haar Cascade, Fisher Linear Discriminant Analysis (LDA), Principal Component Analysis (PCA).
+              </li>
+              <li className="resume__publication-description">
+                Developed and published a research paper on an Automated Attendance System that utilizes face recognition and live video processing for efficient and real-time attendance tracking. The paper, published in the International Journal of Engineering Research & Technology (IJERT), demonstrated the system’s 85%+ accuracy and its real-time capabilities in detecting and marking attendance.
+              </li>
+              <li className="resume__publication-description">
+                The paper received appreciation from the IJERT team and industry professionals for its innovative approach and practical use of face recognition in educational attendance systems.
+              </li>
+              <li className="resume__publication-description">
+                Successfully demonstrated the project at the final presentation, earning congratulations from faculty and officials for its potential to automate and improve traditional attendance methods in educational institutions.
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <div className="resume__download">
           <a href={cv} download="Varun_Gopinath_Resume.pdf" className="resume__download-button">
