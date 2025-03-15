@@ -17,15 +17,32 @@ const Resume = ({ show, onClose }) => {
         <div className="resume__header">
           <h1 className="resume__name">VARUN GOPINATH</h1>
           <p className="resume__contact">
-            +1 (226)-868-3301 • varun.g.nath.official@gmail.com • Kitchener, ON, Canada •{" "}
-            <a href="https://www.linkedin.com/in/varungnath/" target="_blank" rel="noopener noreferrer">
+            <a href="tel:+12268683301" className="resume__link">
+              +1 (226)-868-3301
+            </a>{" "}
+            •{" "}
+            <a href="mailto:varun.g.nath.official@gmail.com" className="resume__link">
+              varun.g.nath.official@gmail.com
+            </a>{" "}
+            • Kitchener, ON, Canada •{" "}
+            <a
+              href="https://www.linkedin.com/in/varungnath/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume__link"
+            >
               <FaLinkedin className="resume__icon" />
             </a>{" "}
             •{" "}
-            <a href="http://github.com/varungnathan/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://github.com/varungnathan/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume__link"
+            >
               <FaGithub className="resume__icon" />
             </a>
-          </p>
+        </p>
           <div className="resume__role-container">
             <h2 className="resume__role">Full Stack Developer</h2>
             <a href={cv} download="Varun_Gopinath_Resume.pdf" className="resume__download-button">
@@ -48,6 +65,7 @@ const Resume = ({ show, onClose }) => {
           <div className="resume__experience">
             <h4 className="resume__experience-title">Freelance Web Developer, Canada (Remote)</h4>
             <p className="resume__experience-duration">Mar 2024 - Present</p>
+            &nbsp;
             <ul className="resume__experience-list">
               <li>
                 <strong>Web Design & Development:</strong> Developed custom web applications and websites from scratch
@@ -126,6 +144,7 @@ const Resume = ({ show, onClose }) => {
               </a>
             </div>
             <p className="resume__project-duration">Aug 2024 - Dec 2024</p>
+            &nbsp;
             <ul className="resume__project-list">
               <li>
                 Developed a platform designed for meal planning, grocery management, and personalized recipe
@@ -161,11 +180,13 @@ const Resume = ({ show, onClose }) => {
               Netlify, Render.
             </p>
           </div>
+          &nbsp;
           <div className="resume__project">
             <h4 className="resume__project-title">
               Automated Attendance System Based on Face Recognition & Live Video Processing
             </h4>
             <p className="resume__project-duration">Apr 2020 - May 2021</p>
+            &nbsp;
             <ul className="resume__project-list">
               <li>
                 Developed an Automated Attendance System using face recognition technology and real-time video

@@ -86,33 +86,33 @@
     width: 300px;
     height: 300px;
     animation: profile__animate 8s ease-in-out infinite 1s;
-    border: 5px solid; /* Add this line to define the border */
+    border: 5px solid;
 }
 
 @keyframes profile__animate {
     0% {
         border-radius: 50% 50% 40% 60% / 60% 40% 50% 50%;
-        border-color: #8B8589; /* Taupe Gray */
+        border-color: #8B8589;
     }
 
     25% {
         border-radius: 40% 60% 60% 40% / 50% 50% 40% 60%;
-        border-color: #B0C4DE; /* Light Steel Blue */
+        border-color: #B0C4DE;
     }
 
     50% {
         border-radius: 70% 30% 50% 50% / 40% 70% 30% 60%;
-        border-color: #CFCFC4; /* Pale Silver */
+        border-color: #CFCFC4;
     }
 
     75% {
         border-radius: 30% 70% 60% 40% / 60% 30% 70% 40%;
-        border-color: #D3D3D3; /* Light Gray */
+        border-color: #D3D3D3;
     }
 
     100% {
         border-radius: 50% 50% 40% 60% / 60% 40% 50% 50%;
-        border-color: #8B8589; /* Taupe Gray */
+        border-color: #8B8589;
     }
 }
 
@@ -141,3 +141,17 @@ wheel {
     margin-left: 2px;
 }
 
+/* Mobile view: Align icons horizontally */
+@media screen and (max-width: 768px) {
+    .home__social {
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 1.5rem;
+        row-gap: 0;
+        justify-content: center;
+    }
+
+    .home__social-icon div {
+        width: 40px;
+        height: 40px;
+    }
+}
