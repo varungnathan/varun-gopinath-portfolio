@@ -1,0 +1,55 @@
+/* src\components\welcomepage\welcomePage.css */
+
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--body-color);
+  color: var(--font-color);
+  font-family: var(--body-font);
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  text-align: center;
+}
+
+.welcome-page.fade-out {
+  opacity: 0;
+}
+
+.welcome-page h1 {
+  font-size: var(--big-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  margin-bottom: var(--mb-1);
+}
+
+.welcome-page p {
+  font-size: var(--h3-font-size);
+  color: var(--font-color-alt);
+  font-weight: var(--font-normal);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome-page h1 {
+    font-size: var(--h1-font-size);
+  }
+
+  .welcome-page p {
+    font-size: var(--normal-font-size);
+  }
+}
