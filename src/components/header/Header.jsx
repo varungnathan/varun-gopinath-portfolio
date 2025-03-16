@@ -58,14 +58,14 @@ const Header = () => {
             </li>
 
             <li className="nav__item">
-              <a href="#projects" className="nav__link">
-                <i className="uil uil-folder nav__icon"></i> Projects
-              </a>
-            </li>
-
-            <li className="nav__item">
               <a href="#education" className="nav__link">
                 <i className="uil uil-graduation-cap nav__icon"></i> Education
+              </a>
+            </li>
+            
+            <li className="nav__item">
+              <a href="#projects" className="nav__link">
+                <i className="uil uil-folder nav__icon"></i> Projects
               </a>
             </li>
 
@@ -77,7 +77,7 @@ const Header = () => {
 
             <li className="nav__item">
               <a href="#contact" className="nav__link" onClick={handleContactClick}>
-                <i className="uil uil-envelope nav__icon"></i> Contact
+                <i className="uil uil-envelope nav__icon"></i> Connect Me
               </a>
             </li>
           </ul>

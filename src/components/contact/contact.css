@@ -19,6 +19,9 @@
   border-radius: 1rem;
   text-align: center;
   position: relative;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact__modal-close {
@@ -27,4 +30,45 @@
   right: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
+  color: var(--text-color);
+}
+
+.contact__modal-close:hover {
+  color: var(--title-color);
+}
+
+.contact__modal-content h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+}
+
+.contact__modal-content p {
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.contact__modal-content strong {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.contact__modal-button {
+  background-color: rgb(127, 176, 211);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact__modal-button:hover {
+  background-color: rgb(61, 95, 120);
+}
+
+.catchphrase {
+  font-size: 40px;
 }
