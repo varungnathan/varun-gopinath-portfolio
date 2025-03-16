@@ -17,7 +17,8 @@ const WelcomePage = ({ onWelcomeComplete }) => {
 
   return (
     <div className={`welcome-page ${fadeOut ? 'fade-out' : ''}`}>
-      <h1>Welcome to Varun's Portfolio</h1>
+      <h1>Welcome! I'm Varun</h1>
+      <p>Thank you for visiting. Let's get started.</p>
     </div>
   );
 };
