@@ -1,6 +1,5 @@
 // src\components\resume\Resume.jsx
 
-
 import React from "react";
 import "./resume.css";
 import cv from "../../assets/cv.pdf";
@@ -42,7 +41,7 @@ const Resume = ({ show, onClose }) => {
             >
               <FaGithub className="resume__icon" />
             </a>
-        </p>
+          </p>
           <div className="resume__role-container">
             <h2 className="resume__role">Full Stack Developer</h2>
             <a href={cv} download="Varun_Gopinath_Resume.pdf" className="resume__download-button">
@@ -217,10 +216,10 @@ const Resume = ({ show, onClose }) => {
           <ul className="resume__competencies-list">
             <li>
               <strong>Backend:</strong> Node.js, Express.js, MongoDB, SQL (MySQL, PostgreSQL), RESTful APIs,
-              WebSockets, Firebase, Server-side authentication, API integration.
+              WebSockets, Firebase, Server-side authentication, API integration, .NET.
             </li>
             <li>
-              <strong>Frontend:</strong> React.js, HTML, CSS, JavaScript, JSX, Bootstrap, Material-UI, Responsive
+              <strong>Frontend:</strong> React.js, HTML, CSS, JavaScript, TypeScript, JSX, Bootstrap, Material-UI, Responsive
               Design, RESTful API integration, AJAX, DOM manipulation, Cross-browser compatibility, jQuery.
             </li>
             <li>
@@ -267,18 +266,18 @@ const Resume = ({ show, onClose }) => {
             </div>
 
             <ul className="resume__publication-list">
-            <li className="resume__publication-details" style={{ fontSize: '16px' }}>
-              <strong>Technologies:</strong> Python, OpenCV, Haar Cascade, Fisher Linear Discriminant Analysis (LDA), Principal Component Analysis (PCA).
-            </li>
-            <li className="resume__publication-description" style={{ fontSize: '16px' }}>
+              <li className="resume__publication-details" style={{ fontSize: '16px' }}>
+                <strong>Technologies:</strong> Python, OpenCV, Haar Cascade, Fisher Linear Discriminant Analysis (LDA), Principal Component Analysis (PCA).
+              </li>
+              <li className="resume__publication-description" style={{ fontSize: '16px' }}>
                 Developed and published a research paper on an Automated Attendance System that utilizes face recognition and live video processing for efficient and real-time attendance tracking. The paper, published in the International Journal of Engineering Research & Technology (IJERT), demonstrated the system’s 85%+ accuracy and its real-time capabilities in detecting and marking attendance.
-            </li>
-            <li className="resume__publication-description" style={{ fontSize: '16px' }}>
+              </li>
+              <li className="resume__publication-description" style={{ fontSize: '16px' }}>
                 The paper received appreciation from the IJERT team and industry professionals for its innovative approach and practical use of face recognition in educational attendance systems.
-            </li>
-            <li className="resume__publication-description" style={{ fontSize: '16px' }}>
+              </li>
+              <li className="resume__publication-description" style={{ fontSize: '16px' }}>
                 Successfully demonstrated the project at the final presentation, earning congratulations from faculty and officials for its potential to automate and improve traditional attendance methods in educational institutions.
-            </li>
+              </li>
             </ul>
           </div>
         </div>
