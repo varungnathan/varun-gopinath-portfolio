@@ -1,14 +1,11 @@
 // src\components\education\Education.jsx
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './education.css';
-import BTechCertificate from '../../assets/Degree Certificate_page-0001.jpg';
-import ConestogaCertificate from '../../assets/8929281 - parchment 2024_page-0001.jpg';
 
 const Education = () => {
   const postgradRef = useRef(null);
   const undergradRef = useRef(null);
-  const [modalImage, setModalImage] = useState(null);
 
   useEffect(() => {
     const postgradElement = postgradRef.current;
@@ -42,14 +39,6 @@ const Education = () => {
     };
   }, []);
 
-  const openModal = (image) => {
-    setModalImage(image);
-  };
-
-  const closeModal = () => {
-    setModalImage(null);
-  };
-
   return (
     <section className="education__section" id="education">
       <h2 className="section__title">Education</h2>
@@ -65,12 +54,6 @@ const Education = () => {
               <p className="education__institution">Conestoga College, Kitchener, Ontario, Canada</p>
               <p className="education__date">2023 - 2024</p>
               <p className="education__gpa">Grade: 3.31 GPA</p>
-              <button
-                className="education__button"
-                onClick={() => openModal(ConestogaCertificate)}
-              >
-                View Certificate
-              </button>
             </div>
           </div>
         </div>
@@ -86,24 +69,10 @@ const Education = () => {
               <p className="education__institution">Kerala Technological University, Kerala, India</p>
               <p className="education__date">2017 - 2021</p>
               <p className="education__gpa">Grade: 7.18 GPA</p>
-              <button
-                className="education__button"
-                onClick={() => openModal(BTechCertificate)}
-              >
-                View Certificate
-              </button>
             </div>
           </div>
         </div>
       </div>
-
-      {modalImage && (
-        <div className="modal" onClick={closeModal}>
-          <div className="modal__content">
-            <img src={modalImage} alt="Certificate" className="modal__image" />
-          </div>
-        </div>
-      )}
     </section>
   );
 };
