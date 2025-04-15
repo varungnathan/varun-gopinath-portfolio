@@ -62,6 +62,25 @@ const Resume = ({ show, onClose }) => {
         <div className="resume__section">
           <h3 className="resume__section-title">Professional Experience</h3>
           <div className="resume__experience">
+            <h4 className="resume__experience-title">Software Engineer at JIVROM, Kochi, Kerala, India</h4>
+            <p className="resume__experience-duration">Aug 2021 - Jun 2023</p>
+            &nbsp;
+            <ul className="resume__experience-list">
+            <li>Implemented RESTful APIs using Node.js and Express.js to handle business logic</li>
+            <li>Designed MongoDB schemas and optimized database queries for faster data retrieval</li>
+            <li>Built reusable UI components that reduced development time by 25%</li>
+            <li>Integrated third-party APIs including payment gateways and Google Maps</li>
+            <li>Wrote clean, maintainable code following best practices and coding standards</li>
+            <li>Increased application performance by implementing lazy loading and code splitting</li>
+            <li>Used Git for version control and collaborative development workflows</li>
+            <li>Fixed bugs and resolved production issues within tight deadlines</li>
+            </ul>
+            <p className="resume__project-technologies">
+              <strong>Technologies Used:</strong> React.js, Angular, JavaScript, TypeScript, Node.js, Express.js, MongoDB, MySQL, REST APIs, HTML5, CSS3, Bootstrap, Material UI, Git
+           </p>
+          </div>
+          &nbsp;
+          <div className="resume__experience">
             <h4 className="resume__experience-title">Freelance Web Developer, Canada (Remote)</h4>
             <p className="resume__experience-duration">Mar 2024 - Present</p>
             &nbsp;
@@ -124,11 +143,12 @@ const Resume = ({ show, onClose }) => {
           <div className="resume__education">
             <h4 className="resume__education-title">Conestoga College, Kitchener, Canada</h4>
             <p className="resume__education-details">
-              Ontario College Graduate Certificate in Web Development (GPA: 3.31), Sep 2023 - Dec 2024
+              Ontario College Graduate Certificate in Web Development, Sep 2023 - Dec 2024
             </p>
+            &nbsp;
             <h4 className="resume__education-title">Mangalam College of Engineering, Kottayam, India</h4>
             <p className="resume__education-details">
-              Bachelor of Technology in Computer Science and Engineering (GPA: 7.21), Jun 2017 - Jul 2021
+              Bachelor of Technology in Computer Science and Engineering, Jun 2017 - Jul 2021
             </p>
           </div>
         </div>
