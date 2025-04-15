@@ -89,7 +89,7 @@
   }
 
   .about__info {
-      justify-content: center;
+      display: none;
   }
 
   .about__description {
@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 576px) {
   .about__info {
-      grid-template-columns: repeat(3, 1fr);
+      display: none;
   }
 
   .about__description {
@@ -110,6 +110,6 @@
 
 @media screen and (max-width: 350px) {
   .about__info {
-      grid-template-columns: repeat(3, 1fr);
+    display: none;
   }
 }
