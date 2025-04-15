@@ -17,5 +17,5 @@ This portfolio showcases my skills, projects, and experience as a Full Stack Web
 
 ## Links
 
-- **Deployed Site:** [Varun Gopinath's Portfolio](https://varungnath.netlify.app/)
-- **GitHub Repository:** [GitHub](https://github.com/varungnath/portfolio)
+- **Deployed Site:** [Varun Gopinath's Portfolio](https://varungnath.netlify.app/){:target="_blank" rel="noopener noreferrer"}
+- **GitHub Repository:** [GitHub](https://github.com/varungnath/portfolio){:target="_blank" rel="noopener noreferrer"}
