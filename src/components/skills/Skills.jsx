@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPhp, FaPython, FaAndroid, FaCloud, FaJava, FaCode } from 'react-icons/fa';
-import { SiFirebase, SiMongodb, SiMysql, SiTypescript, SiDotnet } from 'react-icons/si';
+import { SiFirebase, SiMongodb, SiMysql, SiTypescript, SiDotnet, SiAdobe, SiFigma } from 'react-icons/si';
 import './skills.css';
 
 const Skills = () => {
@@ -49,6 +49,14 @@ const Skills = () => {
       skills: [
         { name: 'Firebase', level: 90, icon: <SiFirebase className="skill-icon" color="#FFCA28" /> },
         { name: 'AWS', level: 70, icon: <FaCloud className="skill-icon" color="#FF9900" /> },
+      ],
+    },
+    {
+      title: 'Design Tools',
+      skills: [
+        { name: 'Adobe XD', level: 85, icon: <SiAdobe className="skill-icon" color="#FF0000" /> },
+        { name: 'Figma', level: 90, icon: <SiFigma className="skill-icon" color="#F24E1E" /> },
+        { name: 'Sketch', level: 75, icon: <SiAdobe className="skill-icon" color="#F7B500" /> },
       ],
     },
   ];

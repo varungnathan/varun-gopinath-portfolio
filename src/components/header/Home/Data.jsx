@@ -10,7 +10,7 @@ const Data = () => {
         <h3 className="home__subtitle">
           <span>
             <Typewriter
-              words={["Full Stack Web Developer", "Mobile Developer"]}
+              words={["Full Stack Web Developer", "Mobile Application Developer", "Web Designer"]}
               loop={0} // 0 means infinite loop
               cursor
               cursorStyle="|"
