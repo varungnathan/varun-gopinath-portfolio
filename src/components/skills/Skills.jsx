@@ -1,5 +1,3 @@
-// src\components\skills\Skills.jsx
-
 import React, { useEffect } from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPhp, FaPython, FaAndroid, FaCloud, FaJava, FaCode } from 'react-icons/fa';
 import { SiFirebase, SiMongodb, SiMysql, SiTypescript, SiDotnet, SiAdobe, SiFigma } from 'react-icons/si';
@@ -66,17 +64,9 @@ const Skills = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const progressBars = entry.target.querySelectorAll('.skill__progress');
-            progressBars.forEach((bar) => {
-              bar.style.width = bar.getAttribute('data-level');
-            });
-
-            const typingElements = entry.target.querySelectorAll('.typing-effect');
-            typingElements.forEach((element) => {
-              element.classList.add('blink-caret');
-              setTimeout(() => {
-                element.classList.remove('blink-caret');
-              }, 2000);
+            const circles = entry.target.querySelectorAll('.skill__circle-progress');
+            circles.forEach((circle) => {
+              circle.style.setProperty('--progress', circle.getAttribute('data-level'));
             });
           }
         });
@@ -101,20 +91,15 @@ const Skills = () => {
             <h3 className="skills__title">{group.title}</h3>
             <div className="skills__group">
               {group.skills.map((skill) => (
-                <div className="skills__data" key={skill.name}>
-                  <h4 className="skills__name">
-                    {skill.icon} <span className="typing-effect">{skill.name}</span>
-                  </h4>
-                  <div className="skill__bar-container">
-                    <div className="skill__bar">
-                      <div
-                        className="skill__progress"
-                        data-level={`${skill.level}%`}
-                        style={{ width: '0%' }}
-                      ></div>
-                    </div>
-                    <span className="skills__level">{skill.level}%</span>
+                <div className="skill__circle-container" key={skill.name}>
+                  <div 
+                    className="skill__circle-progress" 
+                    data-level={`${skill.level}%`}
+                  >
+                    {skill.icon}
+                    <span className="skill__percentage">{skill.level}%</span>
                   </div>
+                  <span className="skill__circle-name">{skill.name}</span>
                 </div>
               ))}
             </div>
