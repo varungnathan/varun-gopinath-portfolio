@@ -1,94 +1,96 @@
-/* src/components/projects/projectModal.css */
-
 .project__modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: var(--z-modal);
-    overflow: auto; /* Allow scrolling if content is too large */
-  }
-  
-  .project__modal-content {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 1rem;
-    text-align: center;
-    position: relative;
-    max-width: 90%; /* Limit the width of the modal */
-    max-height: 90%; /* Limit the height of the modal */
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
-  }
-  
-  .project__modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .project__details {
-    margin-top: 1rem;
-    font-size: 1.4rem;
-    text-align: justify;
-  }
-  
-  .project__technologies {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1rem; /* Added margin */
-  }
-  
-  .project__technology {
-    margin: 0.5rem;
-    display: flex;
-    align-items: center;
-    font-size: 1.4rem; /* Increased font size */
-  }
-  
-  .project__technology-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 0.5rem;
-  }
-  
-  .project__visit-button {
-    margin-top: 1rem;
-    padding: 0.75rem 1.25rem;
-    background-color: rgb(35, 102, 150);
-    color: var(--container-color);
-    font-size: 1.4rem; /* Increased font size */
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .project__visit-button:hover {
-    background-color: rgb(127, 176, 211);
-  }
-  
-  /* Additional margin between sections */
-  .project__details > p {
-    margin-top: 1rem;
-  }
-  
-  .project__details > .project__features {
-    margin-top: 1rem;
-  }
-  
-  .project__details > .project__challenges {
-    margin-top: 1rem;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-modal);
+  overflow: auto;
+}
+
+.project__modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.project__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.project__layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.project__image-container {
+  flex: 1;
+  max-width: 300px;
+}
+
+.project__image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.project__info {
+  flex: 2;
+}
+
+.project__technologies {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.project__technology {
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.project__technology-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+.project__visit-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  background-color: rgb(35, 102, 150);
+  color: var(--container-color);
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.project__visit-button:hover {
+  background-color: rgb(127, 176, 211);
+}
+
+.project__details > p {
+  margin-top: 1rem;
+}

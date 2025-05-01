@@ -1,5 +1,3 @@
-// src\App.js
-
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -8,7 +6,7 @@ import Home from './components/header/Home/Home';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import Education from './components/education/Education';
-import Projects from './components/projects/Projects';
+import Prodetail from './components/projects/Prodetail'; // New component
 import Resume from './components/resume/Resume';
 import Contact from './components/contact/Contact';
 
@@ -28,7 +26,7 @@ const App = () => {
                 <About />
                 <Skills />
                 <Education />
-                <Projects />
+                <Prodetail /> {/* Replaces <Projects /> */}
                 <Contact />
               </main>
             }
