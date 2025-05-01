@@ -1,8 +1,11 @@
+// src\components\projects\Prodetail.jsx
+
 import React from 'react';
 import './Prodetail.css';
 import PlanEatImage from '../../assets/PlanEat.png';
+import MangalamImage from '../../assets/Mangalam College.png';
 import { FaReact, FaNodeJs, FaFire, FaExternalLinkAlt } from 'react-icons/fa';
-import { SiMongodb, SiJavascript, SiCss3, SiHtml5, SiRedux } from 'react-icons/si';
+import { SiMongodb, SiJavascript, SiCss3, SiHtml5, SiRedux, SiMysql } from 'react-icons/si';
 
 const Prodetail = () => {
   return (
@@ -78,6 +81,70 @@ const Prodetail = () => {
             <div className="prodetail__live-link">
               <a 
                 href="https://planeat-capstone.netlify.app/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="prodetail__link"
+              >
+                <FaExternalLinkAlt /> Visit Live Site
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="prodetail__project">
+        <div className="prodetail__image-container">
+          <img 
+            src={MangalamImage} 
+            alt="Mangalam College Website" 
+            className="prodetail__image"
+          />
+        </div>
+        <div className="prodetail__content">
+          <h2 className="prodetail__title">Mangalam College of Engineering Website</h2>
+          <div className="prodetail__tags">
+            <div className="prodetail__tag-box">
+              <span className="prodetail__tag">Educational</span>
+            </div>
+            <div className="prodetail__tag-box">
+              <span className="prodetail__tag">Institutional</span>
+            </div>
+            <div className="prodetail__tag-box">
+              <span className="prodetail__tag">CMS</span>
+            </div>
+          </div>
+          
+          <div className="prodetail__description">
+            <h3>Official Website for Mangalam College of Engineering</h3>
+            <p>
+              A complete refurbishment of the college's official website with modern design,
+              improved navigation, and better content management. The project was commissioned
+              by the college administration as part of their digital upgrade initiative.
+            </p>
+
+            <h4>Technologies Used:</h4>
+            <div className="prodetail__tech-stack">
+              <div className="tech-icon-container">
+                <SiHtml5 className="tech-icon" color="#E34F26" />
+                <span>HTML5</span>
+              </div>
+              <div className="tech-icon-container">
+                <SiCss3 className="tech-icon" color="#2965f1" />
+                <span>CSS3</span>
+              </div>
+              <div className="tech-icon-container">
+                <SiJavascript className="tech-icon" color="#F7DF1E" />
+                <span>JavaScript</span>
+              </div>
+              <div className="tech-icon-container">
+                <SiMysql className="tech-icon" color="#4479A1" />
+                <span>MySQL</span>
+              </div>
+            </div>
+
+            <div className="prodetail__live-link">
+              <a 
+                href="https://www.mangalam.ac.in/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="prodetail__link"
