@@ -1,3 +1,5 @@
+// src\components\skills\Skills.jsx
+
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPhp, FaPython, FaAndroid, FaCloud, FaJava, FaCode } from 'react-icons/fa';
 import { SiFirebase, SiMongodb, SiMysql, SiTypescript, SiDotnet, SiAdobe, SiFigma } from 'react-icons/si';

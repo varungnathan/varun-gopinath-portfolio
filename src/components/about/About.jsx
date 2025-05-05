@@ -21,6 +21,7 @@ const About = () => {
                   On the backend, I have hands-on experience with PHP, Node.js, Python, and SQL, enabling me to build scalable and efficient web applications. 
                   In addition to web development, I am passionate about mobile development using Kotlin and have worked on cross-platform projects using React Native. 
                   With a focus on delivering seamless user experiences, I am constantly exploring new technologies to stay ahead of industry trends and build robust applications across platforms.
+                
                 </p>
                 {/* <a download="" href={CV} className="button button--flex">Download CV
                     <svg

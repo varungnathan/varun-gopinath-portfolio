@@ -21,7 +21,7 @@ const Data = () => {
           </span>
         </h3>
         <p className="home__description">
-          Recent Web Development graduate with a strong foundation in frontend and backend technologies. Proficient in HTML, CSS, JavaScript, and React for web development, and experienced with PHP, Node.js, Python, and SQL for backend. Passionate about mobile development using Kotlin and React Native.
+        A results-driven Full Stack Developer with expertise in frontend and backend technologies, including HTML, CSS, JavaScript, React, PHP, Node.js, Python, and SQL. Proven experience in building responsive web applications, optimizing performance, and developing scalable solutions. Skilled in mobile development with Kotlin and React Native for cross-platform projects. Passionate about creating seamless user experiences while staying ahead of industry trends to deliver innovative, high-performance applications
         </p>
         {/* <a href="#contact" className="button button--flex">
             Say Hello
