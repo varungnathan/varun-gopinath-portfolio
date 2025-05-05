@@ -23,7 +23,7 @@ const Resume = ({ show, onClose }) => {
             <a href="mailto:varun.g.nath.official@gmail.com" className="resume__link">
               varun.g.nath.official@gmail.com
             </a>{" "}
-            • Kitchener, ON, Canada •{" "}
+            • Toronto, ON, Canada •{" "}
             <a
               href="https://www.linkedin.com/in/varungnath/"
               target="_blank"
@@ -62,7 +62,7 @@ const Resume = ({ show, onClose }) => {
         <div className="resume__section">
           <h3 className="resume__section-title">Professional Experience</h3>
           <div className="resume__experience">
-            <h4 className="resume__experience-title">Software Engineer at JIVROM, Kochi, Kerala, India</h4>
+            <h4 className="resume__experience-title">Full Stack Developer at JIVROM, Kochi, Kerala, India</h4>
             <p className="resume__experience-duration">Aug 2021 - Jun 2023</p>
             &nbsp;
             <ul className="resume__experience-list">
