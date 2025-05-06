@@ -48,7 +48,7 @@ const Info = () => {
       <div className="about__box">
         <div ref={profileIconRef} className="about__icon"></div>
         <h3 className="about__title">Profile</h3>
-        <span className="about__subtitle">Aspiring Developer</span>
+        <span className="about__subtitle">Experienced Developer</span>
       </div>
 
       <div className="about__box">

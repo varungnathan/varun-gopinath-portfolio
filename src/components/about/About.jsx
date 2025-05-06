@@ -16,12 +16,12 @@ const About = () => {
                 <Info />
 
                 <p className="about__description">
-                  I am a recent graduate in Web Development from Conestoga College, with a strong foundation in both frontend and backend technologies. 
-                  I am proficient in HTML, CSS, and JavaScript for creating responsive and dynamic web applications, along with expertise in React for building interactive UIs. 
-                  On the backend, I have hands-on experience with PHP, Node.js, Python, and SQL, enabling me to build scalable and efficient web applications. 
-                  In addition to web development, I am passionate about mobile development using Kotlin and have worked on cross-platform projects using React Native. 
-                  With a focus on delivering seamless user experiences, I am constantly exploring new technologies to stay ahead of industry trends and build robust applications across platforms.
-                
+                Full Stack Developer with 3+ years of experience building scalable web applications using JavaScript, Python, SQL, React, and Node.js. 
+                Proven expertise in designing responsive UIs with React.js and TypeScript, while building robust backend systems with Node.js, Express.js, and Spring Boot. 
+                Skilled in database design and optimization across both SQL (PostgreSQL, MySQL, MS SQL) and NoSQL (MongoDB) platforms. 
+                Experienced in full project lifecycle development - from requirements gathering to deployment on cloud platforms like AWS and Render. 
+                Passionate about creating data-driven solutions, having delivered 25+ projects including RESTful APIs, custom dashboards, and automation tools. 
+                Continuously expanding skills in mobile development (React Native, Kotlin) while maintaining a strong focus on performance optimization and user experience.
                 </p>
                 {/* <a download="" href={CV} className="button button--flex">Download CV
                     <svg
