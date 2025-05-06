@@ -32,17 +32,14 @@ const Data = () => {
         </span>
       </h3>
       <p className="home__description">
-        A results-driven Full Stack Developer with expertise in frontend and backend technologies, including HTML, CSS, JavaScript, React, PHP, Node.js, Python, and SQL. Proven experience in building responsive web applications, optimizing performance, and developing scalable solutions. Skilled in mobile development with Kotlin and React Native for cross-platform projects. Passionate about creating seamless user experiences while staying ahead of industry trends to deliver innovative, high-performance applications.
+        A results-driven Full Stack Developer with expertise in frontend and backend technologies, including HTML, CSS, JavaScript, React, PHP, Node.js, Python, and SQL. Proven experience in building responsive web applications, optimizing performance, and developing scalable solutions. Skilled in mobile development with Kotlin and React Native for cross-platform projects. Passionate about creating seamless user experiences while staying ahead of industry trends to deliver innovative, high-performance applications
       </p>
       <div className="home__buttons">
-        <button
-          className="button button--flex"
-          onClick={openResumeModal}
-          style={{ color: '#000', backgroundColor: 'transparent', border: '2px solidrgb(70, 90, 101)' }}
-        >
+        <button className="button button--flex" onClick={openResumeModal} style={{ color: '#fff', borderColor: '#33A8F1' }}>
           View Resume
         </button>
       </div>
+
       <Resume show={showResumeModal} onClose={closeResumeModal} />
     </div>
   );
