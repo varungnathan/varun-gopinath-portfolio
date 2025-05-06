@@ -1,0 +1,168 @@
+/* src\components\experience\Experience.css */
+
+.experience__section {
+    padding: 3rem 0;
+  }
+  
+  .section__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .experience__responsibilities {
+    font-size: 17px
+  }
+  .section__subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .experience__timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .experience__bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: linear-gradient(to bottom, #33A8F1, #0056b3);
+    border-right: 4px solid #adcbde;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+    animation: progress 2s ease-in-out;
+  }
+  
+  @keyframes progress {
+    0% { height: 0; }
+    100% { height: 100%; }
+  }
+  
+  .experience__icon {
+    font-size: 1.5rem;
+    color: #33A8F1;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .experience__degree,
+  .experience__institution,
+  .experience__date,
+  .experience__gpa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .experience__item-visible {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .experience__heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .experience__button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(127, 176, 211);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .experience__button:hover {
+    background-color: #0056b3;
+  }
+  
+  .experience__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal__content {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+  }
+  
+  .modal__image {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .experience__timeline {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      padding: 3rem 20px;
+    }
+  
+    .experience__bar {
+      display: none;
+    }
+  
+    .experience__divider {
+      width: 80%;
+      height: 2px;
+      background-color: #33A8F1;
+      margin: 1.5rem 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .section__title {
+      font-size: 1.8rem;
+    }
+  }

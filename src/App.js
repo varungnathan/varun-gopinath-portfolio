@@ -7,8 +7,9 @@ import Header from './components/header/Header';
 import Home from './components/header/Home/Home';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
+import Experience from './components/experience/Experience';
 import Education from './components/education/Education';
-import Prodetail from './components/projects/Prodetail'; // New component
+import Prodetail from './components/projects/Prodetail';
 import Resume from './components/resume/Resume';
 import Contact from './components/contact/Contact';
 
@@ -27,8 +28,9 @@ const App = () => {
                 <Home />
                 <About />
                 <Skills />
+                <Experience />
                 <Education />
-                <Prodetail /> {/* Replaces <Projects /> */}
+                <Prodetail /> 
                 <Contact />
               </main>
             }
