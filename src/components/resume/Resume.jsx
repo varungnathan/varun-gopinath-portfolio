@@ -49,13 +49,11 @@ const Resume = ({ show, onClose }) => {
             </a>
           </div>
           <p className="resume__summary">
-            Passionate Full-Stack Developer with expertise in <strong>HTML, CSS, JavaScript, React.js, Node.js, Express.js,
-            MongoDB, WordPress, and SEO.</strong> Experienced in building responsive web applications, optimizing user
-            experiences, and managing content with a strong focus on performance, accessibility, and scalability.
-            <strong>Skilled in frontend and backend development, API integration, database management, and cloud deployment.</strong>
-            Adept at collaborating with cross-functional teams, ensuring high-quality web solutions that align with
-            business goals. Excited to leverage technical expertise to develop innovative, user-friendly, and efficient
-            web applications.
+          Versatile developer with hands-on expertise in <strong>JavaScript, Python, SQL, React.js, Node.js, and Express.js</strong>. 
+          Proficient in building scalable, responsive web applications with <strong>strong skills in both frontend and backend development</strong>. 
+          <strong>Experienced with MongoDB, MS SQL, RESTful APIs, WordPress, and SEO best practices</strong>. 
+          Adept at optimizing performance, ensuring accessibility, and collaborating with cross-functional teams. 
+          Known for a fast learning curve, project ownership, and delivering user-centric, business-aligned solutions.
           </p>
         </div>
 
