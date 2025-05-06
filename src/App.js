@@ -11,7 +11,8 @@ import Experience from './components/experience/Experience';
 import Education from './components/education/Education';
 import Prodetail from './components/projects/Prodetail';
 import Resume from './components/resume/Resume';
-import Contact from './components/contact/Contact';
+import Connect from './components/connect/Connect';
+// import Contact from './components/contact/Contact';
 
 const App = () => {
   const [fadeInContent] = useState(true);
@@ -31,7 +32,8 @@ const App = () => {
                 <Experience />
                 <Education />
                 <Prodetail /> 
-                <Contact />
+                <Connect />
+                {/* <Contact /> */}
               </main>
             }
           />

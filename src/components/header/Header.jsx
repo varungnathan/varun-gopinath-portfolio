@@ -3,22 +3,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-import Contact from '../contact/Contact';
 import Resume from '../resume/Resume';
 
 const Header = () => {
   const [Toggle, showMenu] = useState(false);
-  const [showContact, setShowContact] = useState(false);
   const [showResume, setShowResume] = useState(false);
-
-  const handleContactClick = (e) => {
-    e.preventDefault();
-    setShowContact(true);
-  };
-
-  const handleCloseContact = () => {
-    setShowContact(false);
-  };
 
   const handleResumeClick = (e) => {
     e.preventDefault();
@@ -44,12 +33,6 @@ const Header = () => {
                 <i className="uil uil-estate nav__icon"></i> Home
               </Link>
             </li>
-
-            {/* <li className="nav__item">
-              <a href="#about" className="nav__link">
-                <i className="uil uil-user nav__icon"></i> About
-              </a>
-            </li> */}
 
             <li className="nav__item">
               <a href="#skills" className="nav__link">
@@ -82,8 +65,8 @@ const Header = () => {
             </li>
 
             <li className="nav__item">
-              <a href="#contact" className="nav__link" onClick={handleContactClick}>
-                <i className="uil uil-envelope nav__icon"></i> Connect Me
+              <a href="#connect" className="nav__link">
+                <i className="uil uil-message nav__icon"></i> Connect
               </a>
             </li>
           </ul>
@@ -95,7 +78,6 @@ const Header = () => {
         </div>
       </nav>
 
-      <Contact show={showContact} onClose={handleCloseContact} />
       <Resume show={showResume} onClose={handleCloseResume} />
     </header>
   );

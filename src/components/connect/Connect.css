@@ -1,0 +1,25 @@
+/* src\components\connect\Connect.css */
+
+.connect__form {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .connect__input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--font-color-alt);
+    border-radius: 0.5rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: #fff;
+    color: var(--font-color);
+  }
+  
+  .connect__input:focus {
+    outline: none;
+    border-color: var(--title-color);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  }
+  
