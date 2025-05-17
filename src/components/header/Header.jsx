@@ -1,4 +1,4 @@
-// src\components\header\Header.jsx
+// src/components/header/Header.jsx
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -26,6 +26,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <Link to="/" className="nav__logo">Varun Gopinath</Link>
+
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
@@ -41,11 +42,17 @@ const Header = () => {
             </li>
 
             <li className="nav__item">
+              <a href="#services" className="nav__link">
+                <i className="uil uil-cog nav__icon"></i> Services
+              </a>
+            </li>
+
+            <li className="nav__item">
               <a href="#experience" className="nav__link">
                 <i className="uil uil-briefcase-alt nav__icon"></i> Experience
               </a>
             </li>
-            
+
             <li className="nav__item">
               <a href="#education" className="nav__link">
                 <i className="uil uil-graduation-cap nav__icon"></i> Education
