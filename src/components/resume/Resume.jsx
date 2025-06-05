@@ -2,8 +2,7 @@
 
 import React from "react";
 import "./resume.css";
-import cv from "../../assets/cv.pdf";
-import { FaDownload, FaExternalLinkAlt, FaLinkedin, FaGithub } from "react-icons/fa";
+import {FaExternalLinkAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Resume = ({ show, onClose }) => {
   if (!show) return null;
@@ -44,9 +43,6 @@ const Resume = ({ show, onClose }) => {
           </p>
           <div className="resume__role-container">
             <h2 className="resume__role">Full Stack Developer</h2>
-            <a href={cv} download="Varun_Gopinath_Resume.pdf" className="resume__download-button">
-              <FaDownload className="resume__download-icon" /> Download Resume
-            </a>
           </div>
           <p className="resume__summary">
           Versatile developer with hands-on expertise in <strong>JavaScript, Python, SQL, React.js, Node.js, and Express.js</strong>. 
@@ -265,13 +261,6 @@ const Resume = ({ show, onClose }) => {
         </div>
 
         <div className="resume__section">
-          <h3 className="resume__section-title">Interests</h3>
-          <p className="resume__interests">
-            Programming & Development, Photography, Travel, Reading.
-          </p>
-        </div>
-
-        <div className="resume__section">
           <h3 className="resume__section-title">Publications</h3>
           <div className="resume__publication">
             <div className="resume__publication-header">
@@ -301,9 +290,6 @@ const Resume = ({ show, onClose }) => {
         </div>
 
         <div className="resume__download">
-          <a href={cv} download="Varun_Gopinath_Resume.pdf" className="resume__download-button">
-            <FaDownload className="resume__download-icon" /> Download Resume
-          </a>
         </div>
       </div>
     </div>
