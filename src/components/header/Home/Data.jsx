@@ -1,15 +1,13 @@
 // src\components\header\Home\Data.jsx
 
+// src/components/header/Home/Data.jsx
+
 import React, { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import Resume from '../../resume/Resume';
 
 const Data = () => {
   const [showResumeModal, setShowResumeModal] = useState(false);
-
-  const openResumeModal = () => {
-    setShowResumeModal(true);
-  };
 
   const closeResumeModal = () => {
     setShowResumeModal(false);
@@ -34,11 +32,6 @@ const Data = () => {
       <p className="home__description">
         A results-driven Full Stack Developer with expertise in frontend and backend technologies, including HTML, CSS, JavaScript, React, PHP, Node.js, Python, and SQL. Proven experience in building responsive web applications, optimizing performance, and developing scalable solutions. Skilled in mobile development with Kotlin and React Native for cross-platform projects. Passionate about creating seamless user experiences while staying ahead of industry trends to deliver innovative, high-performance applications
       </p>
-      {/* <div className="home__buttons">
-        <button className="button button--flex" onClick={openResumeModal} style={{ color: '#fff', borderColor: '#33A8F1' }}>
-          View Resume
-        </button>
-      </div> */}
 
       <Resume show={showResumeModal} onClose={closeResumeModal} />
     </div>
