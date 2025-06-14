@@ -155,3 +155,9 @@ wheel {
         height: 40px;
     }
 }
+
+@media screen and (max-width: 345px) {
+    .home__img {
+        display: none;
+    }
+}

@@ -1,7 +1,5 @@
 // src\components\header\Home\Data.jsx
 
-// src/components/header/Home/Data.jsx
-
 import React, { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import Resume from '../../resume/Resume';
