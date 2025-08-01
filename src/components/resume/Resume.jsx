@@ -16,11 +16,12 @@ const Resume = ({ show, onClose }) => {
           <h1 className="resume__name">VARUN GOPINATH</h1>
           <p className="resume__contact">
             <a href="tel:+12268683301" className="resume__link">
-              +1 (226)-868-3301
+              +1 (226)-698-6606
             </a>{" "}
             •{" "}
-            <a href="mailto:varun.g.nath.official@gmail.com" className="resume__link">
-              varun.g.nath.official@gmail.com
+            <a href="mailto:varun.gnathan.official@gmail.com
+" className="resume__link">
+              varun.gnathan.official@gmail.com
             </a>{" "}
             • Toronto, ON, Canada •{" "}
             <a
