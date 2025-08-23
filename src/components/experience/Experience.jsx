@@ -55,32 +55,29 @@ const Experience = () => {
               <div className="experience__responsibilities">
                 <p style={{ textAlign: 'justify', marginBottom: '0.5em', paddingLeft: '1.5em', position: 'relative' }}>
                   <span style={{ position: 'absolute', left: '0', top: '0.3em', fontSize: '0.8em' }}>•</span>
-                  Delivered 10+ custom web applications for clients across industries, taking full ownership from planning to deployment.
+                  Collaborated with clients to gather requirements and deliver solutions on time and within budget.
                 </p>
                 <p style={{ textAlign: 'justify', marginBottom: '0.5em', paddingLeft: '1.5em', position: 'relative' }}>
                   <span style={{ position: 'absolute', left: '0', top: '0.3em', fontSize: '0.8em' }}>•</span>
-                  Worked with React.js, Node.js, Python, and SQL to build scalable solutions
+                  Designed responsive and user-friendly interfaces using modern web technologies.
                 </p>
                 <p style={{ textAlign: 'justify', marginBottom: '0.5em', paddingLeft: '1.5em', position: 'relative' }}>
                   <span style={{ position: 'absolute', left: '0', top: '0.3em', fontSize: '0.8em' }}>•</span>
-                  Designed and implemented full-stack applications and interactive dashboards
+                  Developed and maintained efficient backend systems to support dynamic features.
                 </p>
                 <p style={{ textAlign: 'justify', marginBottom: '0.5em', paddingLeft: '1.5em', position: 'relative' }}>
                   <span style={{ position: 'absolute', left: '0', top: '0.3em', fontSize: '0.8em' }}>•</span>
-                  Built and consumed RESTful APIs, integrated third-party services
+                  Ensured high performance, security, and scalability of web applications.
                 </p>
                 <p style={{ textAlign: 'justify', marginBottom: '0.5em', paddingLeft: '1.5em', position: 'relative' }}>
                   <span style={{ position: 'absolute', left: '0', top: '0.3em', fontSize: '0.8em' }}>•</span>
-                  Created optimized database structures (MongoDB, PostgreSQL, MS SQL)
+                  Worked with clients to create custom websites and web applications that met their business needs.
                 </p>
                 <p style={{ textAlign: 'justify', marginBottom: '0.5em', paddingLeft: '1.5em', position: 'relative' }}>
                   <span style={{ position: 'absolute', left: '0', top: '0.3em', fontSize: '0.8em' }}>•</span>
-                  Deployed projects using Netlify, Render, and AWS
+                  Provide ongoing support and updates to improve functionality and user experience.
                 </p>
               </div>
-              {/* <p className="experience__technologies">
-                <strong>Technologies:</strong> React.js, TypeScript, Node.js, Express.js, Python, SQL, MongoDB, Redux, Git, REST APIs, AWS
-              </p> */}
             </div>
           </div>
         </div>

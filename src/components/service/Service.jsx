@@ -1,8 +1,8 @@
 // src/components/service/Service.jsx
 
 import './service.css';
-import { FaLaptopCode, FaSearch, FaPalette, FaMobileAlt, FaTools, FaRocket, FaServer, FaGoogle } from 'react-icons/fa';
-import { SiWordpress, SiShopify } from 'react-icons/si';
+import { FaLaptopCode, FaSearch, FaPalette, FaMobileAlt, FaTools, FaLightbulb, FaDatabase, FaGoogle } from 'react-icons/fa';
+import { SiWordpress, SiAdobe } from 'react-icons/si';
 
 const services = [
   { name: 'Web Development', icon: <FaLaptopCode className="service-icon" /> },
@@ -10,10 +10,10 @@ const services = [
   { name: 'UI/UX Design', icon: <FaPalette className="service-icon" /> },
   { name: 'Mobile App Development', icon: <FaMobileAlt className="service-icon" /> },
   { name: 'WordPress Development', icon: <SiWordpress className="service-icon" /> },
-  { name: 'Shopify & WooCommerce', icon: <SiShopify className="service-icon" /> },
-  { name: 'Website Hosting', icon: <FaServer className="service-icon" /> },
+  { name: 'Graphic Design', icon: <SiAdobe className="service-icon" /> }, // Replaced Shopify & WooCommerce
+  { name: 'Database Management', icon: <FaDatabase className="service-icon" /> }, // Replaced Website Hosting
   { name: 'Site Maintenance', icon: <FaTools className="service-icon" /> },
-  { name: 'Website Speed Optimization', icon: <FaRocket className="service-icon" /> },
+  { name: 'Creative Consulting', icon: <FaLightbulb className="service-icon" /> }, // Replaced Website Speed Optimization
   { name: 'Google Analytics Setup', icon: <FaGoogle className="service-icon" /> }
 ];
 
