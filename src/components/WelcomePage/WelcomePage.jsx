@@ -5,13 +5,22 @@ import './welcomePage.css';
 
 const WelcomePage = ({ onWelcomeComplete }) => {
   const [fadeOut, setFadeOut] = useState(false);
+  const [greeting, setGreeting] = useState('');
 
   useEffect(() => {
-    // Show welcome message and trigger fade-out after a delay
+    const currentHour = new Date().getHours();
+    if (currentHour < 12) {
+      setGreeting('Good Morning! ☀️');
+    } else if (currentHour < 17) {
+      setGreeting('Good Afternoon! 🌤️');
+    } else {
+      setGreeting('Good Evening! 🌇');
+    }
+
     const timer = setTimeout(() => {
       setFadeOut(true);
-      setTimeout(onWelcomeComplete, 1000); // Wait for fade-out animation to complete
-    }, 2000); // Delay before starting fade-out (2 seconds)
+      setTimeout(onWelcomeComplete, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [onWelcomeComplete]);
@@ -20,7 +29,7 @@ const WelcomePage = ({ onWelcomeComplete }) => {
     <div className={`welcome-page ${fadeOut ? 'fade-out' : ''}`}>
       {/* Welcome Message */}
       <div className="welcome-message fade-in">
-        <h1>Bienvenue!!</h1>
+        <h1>{greeting}</h1>
       </div>
     </div>
   );
