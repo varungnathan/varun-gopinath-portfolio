@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./resume.css";
-import {FaExternalLinkAlt, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaLinkedin} from "react-icons/fa";
 
 const Resume = ({ show, onClose }) => {
   if (!show) return null;
@@ -19,8 +19,7 @@ const Resume = ({ show, onClose }) => {
               +1 (226)-698-6606
             </a>{" "}
             •{" "}
-            <a href="mailto:varun.gnathan.official@gmail.com
-" className="resume__link">
+            <a href="mailto:varun.gnathan.official@gmail.com" className="resume__link">
               varun.gnathan.official@gmail.com
             </a>{" "}
             • Toronto, ON, Canada •{" "}
@@ -31,26 +30,17 @@ const Resume = ({ show, onClose }) => {
               className="resume__link"
             >
               <FaLinkedin className="resume__icon" />
-            </a>{" "}
-            •{" "}
-            <a
-              href="http://github.com/varungnathan/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="resume__link"
-            >
-              <FaGithub className="resume__icon" />
             </a>
           </p>
           <div className="resume__role-container">
             <h2 className="resume__role">Full Stack Developer</h2>
           </div>
           <p className="resume__summary">
-          Versatile developer with hands-on expertise in <strong>JavaScript, Python, SQL, React.js, Node.js, and Express.js</strong>. 
-          Proficient in building scalable, responsive web applications with <strong>strong skills in both frontend and backend development</strong>. 
-          <strong>Experienced with MongoDB, MS SQL, RESTful APIs, WordPress, and SEO best practices</strong>. 
-          Adept at optimizing performance, ensuring accessibility, and collaborating with cross-functional teams. 
-          Known for a fast learning curve, project ownership, and delivering user-centric, business-aligned solutions.
+            Versatile developer with hands-on expertise in <strong>JavaScript, Python, SQL, React.js, Node.js, and Express.js</strong>. 
+            Proficient in building scalable, responsive web applications with <strong>strong skills in both frontend and backend development</strong>. 
+            <strong>Experienced with MongoDB, MS SQL, RESTful APIs, WordPress, and SEO best practices</strong>. 
+            Adept at optimizing performance, ensuring accessibility, and collaborating with cross-functional teams. 
+            Known for a fast learning curve, project ownership, and delivering user-centric, business-aligned solutions.
           </p>
         </div>
 
@@ -61,18 +51,17 @@ const Resume = ({ show, onClose }) => {
             <p className="resume__experience-duration">Aug 2021 - Jun 2023</p>
             &nbsp;
             <ul className="resume__experience-list">
-            <li>Implemented RESTful APIs using Node.js and Express.js to handle business logic</li>
-            <li>Designed MongoDB schemas and optimized database queries for faster data retrieval</li>
-            <li>Built reusable UI components that reduced development time by 25%</li>
-            <li>Integrated third-party APIs including payment gateways and Google Maps</li>
-            <li>Wrote clean, maintainable code following best practices and coding standards</li>
-            <li>Increased application performance by implementing lazy loading and code splitting</li>
-            <li>Used Git for version control and collaborative development workflows</li>
-            <li>Fixed bugs and resolved production issues within tight deadlines</li>
+              <li>Implemented RESTful APIs using Node.js and Express.js to handle business logic</li>
+              <li>Designed MongoDB schemas and optimized database queries for faster data retrieval</li>
+              <li>Built reusable UI components that reduced development time by 25%</li>
+              <li>Integrated third-party APIs including payment gateways and Google Maps</li>
+              <li>Wrote clean, maintainable code following best practices and coding standards</li>
+              <li>Increased application performance by implementing lazy loading and code splitting</li>
+              <li>Fixed bugs and resolved production issues within tight deadlines</li>
             </ul>
             <p className="resume__project-technologies">
-              <strong>Technologies Used:</strong> React.js, Angular, JavaScript, TypeScript, Node.js, Express.js, MongoDB, MySQL, REST APIs, HTML5, CSS3, Bootstrap, Material UI, Git
-           </p>
+              <strong>Technologies Used:</strong> React.js, Angular, JavaScript, TypeScript, Node.js, Express.js, MongoDB, MySQL, REST APIs, HTML5, CSS3, Bootstrap, Material UI
+            </p>
           </div>
           &nbsp;
           <div className="resume__experience">
@@ -251,9 +240,6 @@ const Resume = ({ show, onClose }) => {
             <li>
               <strong>Web Optimization & Accessibility:</strong> Responsive Web Design, Mobile Optimization, Web
               Accessibility (WCAG).
-            </li>
-            <li>
-              <strong>Version Control:</strong> Git, GitHub, GitLab.
             </li>
             <li>
               <strong>Deployment:</strong> Netlify, Render, Heroku, AWS (Amazon Web Services), DigitalOcean.
